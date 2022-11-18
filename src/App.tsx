@@ -3,7 +3,7 @@ import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 
 import Spinner from './components/Spinner/Spinner';
-// import './App.scss';
+import './App.scss';
 
 const MainPage = lazy(() => import('./pages/MainPage/MainPage'));
 // const AboutCompanyPage = lazy(() => import('./pages/AboutCompanyPage/AboutCompanyPage'));
@@ -11,7 +11,7 @@ const MainPage = lazy(() => import('./pages/MainPage/MainPage'));
 // const SingleProductPage = lazy(() => import('./pages/SingleProductPage/SingleProductPage'));
 // const ContactsPage = lazy(() => import('./pages/ContactsPage/ContactsPage'));
 // const PolicyPage = lazy(() => import('./pages/PolicyPage/PolicyPage'));
-// const Page404 = lazy(() => import('./pages/404/404'));
+const Page404 = lazy(() => import('./pages/404/404'));
 
 const App: React.FC = () => {
   return (
@@ -21,7 +21,7 @@ const App: React.FC = () => {
       </Suspense>
     </Router>
   );
-}
+};
 
 const AnimatedSwitch = () => {
   const location = useLocation();
@@ -49,9 +49,9 @@ const AnimatedSwitch = () => {
         <Route path="services" element={<OurServicesPage />} />
         <Route path="services/:id" element={<SingleProductPage />} />
         <Route path="contacts" element={<ContactsPage />} />
-        <Route path="policy" element={<PolicyPage />} />
+        <Route path="policy" element={<PolicyPage />} />*/}
         <Route path="notfound" element={<Page404 />} />
-        <Route path="*" element={<Navigate to="notfound" replace />} /> */}
+        <Route path="*" element={<Navigate to="notfound" replace />} />
       </Routes>
     </div>
   );

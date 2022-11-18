@@ -1,8 +1,9 @@
 // import { Helmet } from 'react-helmet';
 
 import Header from '../../layouts/Header/Header';
+import MainScreen from './sections/MainScreen/MainScreen';
 // import Slider from '../../components/Slider/Slider';
-// import NumericInfo from './sections/NumericInfo/NumericInfo';
+import NumericInfo from './sections/NumericInfo/NumericInfo';
 // import ContactUs from '../../components/ContactUs/ContactUs';
 // import Tabs from '../../components/Tabs/Tabs';
 // import Advantages from './sections/Advantages/Advantages';
@@ -22,10 +23,11 @@ const MainPage: React.FC = () => {
       </Helmet> */}
 
       <Header />
-      {/* 
-      <Slider controls={true} sliderContent={sliderImagesList} />
+      <MainScreen />
+
+      {/* <Slider autoPlay={false} controls={true} sliderContent={sliderImagesList} /> */}
       <NumericInfo />
-      <Tabs />
+      {/* <Tabs />
       <Advantages />
       <Footer /> */}
     </>

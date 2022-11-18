@@ -1,25 +1,28 @@
 @import '../../styles/variables.module.scss';
 
 .navigation {
-    padding: 0 100px 0 100px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: $white-color;
+    width: 50%;
+    &__list {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $white-color;
+    }
 }
+
 
 @keyframes fade-in {
     0% { opacity: 0; height: 0; }
-    100% { opacity: 1; height: 160px; }
+    100% { opacity: 1; height: 120px; }
   }
 
-@media (max-width: 767px) {
-    /* 576 */
-    .navigation {
+@media (max-width: 575px) {
+    /* 320 */
+    .navigation__list {
         justify-content: space-between;
         flex-direction: column;
-        height: 160px;
+        height: 120px;
         text-align: center;
         margin-top: 0;
         padding-top: 12px;
@@ -29,3 +32,6 @@
         }
     }
 }
+
+
+

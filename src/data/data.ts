@@ -1,20 +1,15 @@
 import { v4 as uuidv4 } from 'uuid';
 
-//headerLinksList
-import { ReactComponent as Emailicn } from '../resources/header/emailicn.svg';
-import { ReactComponent as Phoneicn } from '../resources/header/phoneicn.svg';
-import { ReactComponent as Pointicn } from '../resources/header/pointicn.svg';
+//sliderImagesList
+import sliderImage1 from '../resources/slider/imgs/img1.jpg';
+import sliderImage2 from '../resources/slider/imgs/img2.jpg';
+import sliderImage3 from '../resources/slider/imgs/img3.jpg';
 
-// //sliderImagesList
-// import sliderImage1 from '../resources/slider/imgs/img1.jpeg';
-// import sliderImage2 from '../resources/slider/imgs/img2.jpg';
-// import sliderImage3 from '../resources/slider/imgs/img3.jpg';
-
-// //numericInfoList
-// import established from '../resources/numericInfo/established.svg';
-// import workers from '../resources/numericInfo/workers.svg';
-// import customers from '../resources/numericInfo/customers.svg';
-// import surveillance from '../resources/numericInfo/surveillance.svg';
+//numericInfoList
+import established from '../resources/numericInfo/established.svg';
+import workers from '../resources/numericInfo/workers.svg';
+import customers from '../resources/numericInfo/customers.svg';
+import surveillance from '../resources/numericInfo/surveillance.svg';
 
 // //firstTabList
 // import { ReactComponent as Videoicn } from '../resources/tabs/private/icns/videoicn.svg';
@@ -66,58 +61,47 @@ import { ReactComponent as Pointicn } from '../resources/header/pointicn.svg';
 // import { ReactComponent as FacebookIcn } from '../resources/footer/facebookicn.svg';
 // import { ReactComponent as YoutubeIcn } from '../resources/footer/youtubeicn.svg';
 
-export const headerLinksList = [
+interface NavigationListTypes {
+  text: string;
+  to: string;
+}
+export const navigationList: NavigationListTypes[] = [
   {
-    id: uuidv4(),
-    href: 'mailto:mail@gmail.com',
-    Icon: Emailicn,
-    text: 'mail@gmail.com',
-  },
-  {
-    id: uuidv4(),
-    href: 'tel:+80735707777',
-    Icon: Phoneicn,
-    text: '(073)570 77 77',
-  },
-  {
-    id: uuidv4(),
-    href: 'https://goo.gl/maps/CbXq5kECDMpY6wof7',
-    Icon: Pointicn,
-    text: 'вул.Київська, 138, Гатне, Україна',
-  },
-];
-
-export const navigationList = [
-  {
-    text: 'Головна',
+    text: 'O NAMA',
     to: '/',
   },
   {
-    text: 'Про компанію',
-    to: '/aboutcompany',
+    text: 'PROIZVODI',
+    to: '/products',
   },
   {
-    text: 'Наші послуги',
-    to: '/services',
-  },
-  {
-    text: 'Контакти',
+    text: 'KONTAKTI',
     to: '/contacts',
   },
 ];
 
-// export const sliderImagesList = [
-//   { img: sliderImage1, alt: 'Фото Оберіг 1' },
-//   { img: sliderImage2, alt: 'Фото Оберіг 2' },
-//   { img: sliderImage3, alt: 'Фото Оберіг 3' },
-// ];
+export interface SliderImagesListTypes {
+  img: string;
+  alt: string;
+}
+export const sliderImagesList: SliderImagesListTypes[] = [
+  { img: sliderImage1, alt: 'NugaBest photo 1' },
+  { img: sliderImage2, alt: 'NugaBest photo 2' },
+  { img: sliderImage3, alt: 'NugaBest photo 3' },
+];
 
-// export const numericInfoList = [
-//   { id: uuidv4(), img: established, title: 'Років', amount: '10' },
-//   { id: uuidv4(), img: workers, title: 'Працівників', amount: '100' },
-//   { id: uuidv4(), img: customers, title: 'Клієнтів', amount: '200' },
-//   { id: uuidv4(), img: surveillance, title: "Об'єктів", amount: '50' },
-// ];
+interface NumericListTypes {
+  id: string;
+  img: string;
+  title: string;
+  amount: number | null;
+}
+export const numericInfoList: NumericListTypes[] = [
+  { id: uuidv4(), img: established, title: 'Років', amount: 10 },
+  { id: uuidv4(), img: workers, title: 'Працівників', amount: 100 },
+  { id: uuidv4(), img: customers, title: 'Клієнтів', amount: 200 },
+  { id: uuidv4(), img: surveillance, title: "Об'єктів", amount: 50 },
+];
 
 // export const firstTabList = [
 //   {

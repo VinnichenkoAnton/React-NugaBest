@@ -2,12 +2,16 @@ import { useState, useEffect, useCallback } from 'react';
 
 import classes from './NumericItem.module.scss';
 
-const NumericItem = ({ img, title, amount }) => {
-  const [number, setNumber] = useState(0);
-  const [trigger, setTrigger] = useState(false);
+const NumericItem: React.FC<{ img: string; title: string; amount: number | null }> = ({
+  img,
+  title,
+  amount,
+}) => {
+  const [number, setNumber] = useState<number | null>(0);
+  const [trigger, setTrigger] = useState<boolean>(false);
 
   const increment = useCallback(() => {
-    const counter = (length = 1000) => {
+    const counter = (length = 1500) => {
       setNumber(0);
       let n = amount;
       let start = Date.now();

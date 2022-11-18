@@ -2,8 +2,8 @@
     display: none;
 }
 
-@media (max-width: 767px) {
-    /* 576 */
+@media (max-width: 575px) {
+    /* 320 */
     .hamburger {
         display: block;
         position: absolute;
@@ -64,13 +64,6 @@
             }
         }
         
-    }
-}
-
-@media (max-width: 575px) {
-    /* 320 */
-    .hamburger {
-        top: 34px;
     }
 }
 

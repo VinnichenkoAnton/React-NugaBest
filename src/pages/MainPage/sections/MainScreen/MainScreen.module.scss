@@ -1,0 +1,24 @@
+@import '../../../../styles/variables.module.scss';
+.mainscreen {
+    background: url('../../../../resources/mainScreen/mainScreen.png') no-repeat 50%/cover ;
+    min-height: 800px;
+    padding-top: 60px;
+    padding-left: 60px;
+    &__title {
+        font-size: 80px;
+        color: $white-color;
+        font-weight: 700;
+    }
+    &__subtitle {
+        font-size: 40px;
+        color: $white-color;
+        font-weight: 700;
+    }
+    &__description {
+        margin-top: 20px;
+        font-size: 20px;
+        color: $white-color;
+        font-weight: 700;
+        max-width: 470px;
+    }
+}
