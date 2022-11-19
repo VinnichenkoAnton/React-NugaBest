@@ -2,12 +2,12 @@ import { useState, useEffect, useCallback } from 'react';
 
 import classes from './NumericItem.module.scss';
 
-const NumericItem: React.FC<{ img: string; title: string; amount: number | null }> = ({
+const NumericItem: React.FC<{ img: string; title: string; amount: number }> = ({
   img,
   title,
   amount,
 }) => {
-  const [number, setNumber] = useState<number | null>(0);
+  const [number, setNumber] = useState<number>(0);
   const [trigger, setTrigger] = useState<boolean>(false);
 
   const increment = useCallback(() => {
@@ -34,7 +34,7 @@ const NumericItem: React.FC<{ img: string; title: string; amount: number | null 
 
   document.addEventListener('scroll', async () => {
     const element = document.getElementById('root');
-    const elementPosition = element.getBoundingClientRect().top;
+    const elementPosition = element!.getBoundingClientRect().top;
 
     if (window.pageYOffset > elementPosition) setTrigger(true);
   });

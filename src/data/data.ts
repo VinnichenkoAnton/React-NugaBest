@@ -9,7 +9,7 @@ import sliderImage3 from '../resources/slider/imgs/img3.jpg';
 import established from '../resources/numericInfo/established.svg';
 import workers from '../resources/numericInfo/workers.svg';
 import customers from '../resources/numericInfo/customers.svg';
-import surveillance from '../resources/numericInfo/surveillance.svg';
+import prizes from '../resources/numericInfo/prizes.svg';
 
 // //firstTabList
 // import { ReactComponent as Videoicn } from '../resources/tabs/private/icns/videoicn.svg';
@@ -94,13 +94,13 @@ interface NumericListTypes {
   id: string;
   img: string;
   title: string;
-  amount: number | null;
+  amount: number;
 }
 export const numericInfoList: NumericListTypes[] = [
   { id: uuidv4(), img: established, title: 'Років', amount: 10 },
   { id: uuidv4(), img: workers, title: 'Працівників', amount: 100 },
   { id: uuidv4(), img: customers, title: 'Клієнтів', amount: 200 },
-  { id: uuidv4(), img: surveillance, title: "Об'єктів", amount: 50 },
+  { id: uuidv4(), img: prizes, title: "Об'єктів", amount: 50 },
 ];
 
 // export const firstTabList = [
