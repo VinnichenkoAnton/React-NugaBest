@@ -50,11 +50,11 @@ import prizes from '../resources/numericInfo/prizes.svg';
 // import reviewImage2 from '../resources/reviews/review_2.jpg';
 // import reviewImage3 from '../resources/reviews/review_3.jpg';
 
-// //howToInstallList
-// import { ReactComponent as ContactIcn } from '../resources/howToInstall/contacticn.svg';
-// import { ReactComponent as InfoIcn } from '../resources/howToInstall/infoicn.svg';
-// import { ReactComponent as MeetingIcn } from '../resources/howToInstall/meetingicn.svg';
-// import { ReactComponent as ProtectedIcn } from '../resources/howToInstall/protectedicn.svg';
+// //ceramicslList
+import { ReactComponent as ContactIcn } from '../resources/ceramics/contacticn.svg';
+import { ReactComponent as InfoIcn } from '../resources/ceramics/infoicn.svg';
+import { ReactComponent as MeetingIcn } from '../resources/ceramics/meetingicn.svg';
+import { ReactComponent as ProtectedIcn } from '../resources/ceramics/protectedicn.svg';
 
 // //footerSocialList
 // import { ReactComponent as InstagramIcn } from '../resources/footer/instagramicn.svg';
@@ -283,12 +283,64 @@ export const numericInfoList: NumericListTypes[] = [
 //   },
 // ];
 
-// export const howToInstallList = [
-//   { id: uuidv4(), title: 'Зателефонуйте/залиште заявку нашому менеджеру', icn: ContactIcn },
-//   { id: uuidv4(), title: 'Дізнайтеся все необхідне та домовтесь про зустріч', icn: InfoIcn },
-//   { id: uuidv4(), title: 'Зустріч та складання кошторису', icn: MeetingIcn },
-//   { id: uuidv4(), title: "Підписання договору та взяття об'єкта під охорону", icn: ProtectedIcn },
-// ];
+export const ceramicsList = [
+  {
+    id: uuidv4(),
+    title: 'TURMALIN',
+    description: [
+      'Pri zagrijavanju zrači niskofrekventnim magnetnim poljem/, isijava INF. zračenje, Anione',
+      'Potiče jačanje metabolizma stanica, izmjenu tvari u organizmu. Potiče obnovu limfnog i hormonalnog sustava',
+      'Potiče jačanje imuniteta',
+      'Osigurava energiju za organizam',
+      'Poboljšava dotok hrane u organe i tkiva',
+      'Poboljšava kvalitetu krvi',
+      'Razrjeđuje gustu',
+    ],
+    icn: ContactIcn,
+  },
+  {
+    id: uuidv4(),
+    title: 'ELVAN',
+    description: [
+      'Pri zagrijavanju zrači niskofrekventnim magnetnim poljem/, isijava INF. zračenje, Anione',
+      'Potiče jačanje metabolizma stanica, izmjenu tvari u organizmu. Potiče obnovu limfnog i hormonalnog sustava',
+      'Potiče jačanje imuniteta',
+      'Osigurava energiju za organizam',
+      'Poboljšava dotok hrane u organe i tkiva',
+      'Poboljšava kvalitetu krvi',
+      'Razrjeđuje gustu',
+    ],
+    icn: InfoIcn,
+  },
+  {
+    id: uuidv4(),
+    title: 'GERMANIJ',
+    description: [
+      'Pri zagrijavanju zrači niskofrekventnim magnetnim poljem/, isijava INF. zračenje, Anione',
+      'Potiče jačanje metabolizma stanica, izmjenu tvari u organizmu. Potiče obnovu limfnog i hormonalnog sustava',
+      'Potiče jačanje imuniteta',
+      'Osigurava energiju za organizam',
+      'Poboljšava dotok hrane u organe i tkiva',
+      'Poboljšava kvalitetu krvi',
+      'Razrjeđuje gustu',
+    ],
+    icn: MeetingIcn,
+  },
+  {
+    id: uuidv4(),
+    title: 'VULKANSKE STIJENE',
+    description: [
+      'Pri zagrijavanju zrači niskofrekventnim magnetnim poljem/, isijava INF. zračenje, Anione',
+      'Potiče jačanje metabolizma stanica, izmjenu tvari u organizmu. Potiče obnovu limfnog i hormonalnog sustava',
+      'Potiče jačanje imuniteta',
+      'Osigurava energiju za organizam',
+      'Poboljšava dotok hrane u organe i tkiva',
+      'Poboljšava kvalitetu krvi',
+      'Razrjeđuje gustu',
+    ],
+    icn: ProtectedIcn,
+  },
+];
 
 // export const footerSocialList = [
 //   { id: uuidv4(), link: '#', Icn: InstagramIcn },

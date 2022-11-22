@@ -1,11 +1,12 @@
 @import '../../../styles/variables.module.scss';
 
 .title {
+    text-align: left;
     max-width: fit-content;
     position: relative;
     display: block;
-    margin: 0 auto 70px auto;
-    font-size: 30px;
+    margin: 0 auto 20px auto;
+    font-size: 40px;
     color: $main-color;
     font-weight: 700;
     text-transform: uppercase;

@@ -14,7 +14,7 @@ const NumericInfo: React.FC = () => {
   return (
     <section className={classes.numericinfo}>
       <Container>
-        <Title className={classes.numericinfo__header} text="Про нас в числах" />
+        <Title className={classes.numericinfo__header} text="O NAMA U BROJKAMA" />
         <ul className={classes.numericinfo__list}>{numItems}</ul>
       </Container>
     </section>

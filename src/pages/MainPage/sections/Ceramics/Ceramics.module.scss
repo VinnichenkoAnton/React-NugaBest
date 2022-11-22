@@ -1,0 +1,19 @@
+@import '../../../../styles/variables.module.scss';
+.ceramics {
+    padding: 70px 0;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 991px) {
+    /* 768 */
+    .hceramics {
+        &__list {
+            justify-content: center;
+        }
+    }
+}
