@@ -51,10 +51,10 @@ import prizes from '../resources/numericInfo/prizes.svg';
 // import reviewImage3 from '../resources/reviews/review_3.jpg';
 
 // //ceramicslList
-import { ReactComponent as ContactIcn } from '../resources/ceramics/contacticn.svg';
-import { ReactComponent as InfoIcn } from '../resources/ceramics/infoicn.svg';
-import { ReactComponent as MeetingIcn } from '../resources/ceramics/meetingicn.svg';
-import { ReactComponent as ProtectedIcn } from '../resources/ceramics/protectedicn.svg';
+import ceramics1 from '../resources/ceramics/ceramics1.png';
+import ceramics2 from '../resources/ceramics/ceramics2.png';
+import ceramics3 from '../resources/ceramics/ceramics5.png';
+import ceramics4 from '../resources/ceramics/ceramics4.png';
 
 // //footerSocialList
 // import { ReactComponent as InstagramIcn } from '../resources/footer/instagramicn.svg';
@@ -282,63 +282,55 @@ export const numericInfoList: NumericListTypes[] = [
 //       'Все дуже оперативно і якісно: лишила на сайті заявку, менш ніж через 2 хвилини зателефонував менеджер, який проконсультував мене максимально повно і зрозуміло, відповівши на всі питання, які в мене виникли як у дуже далекої від техніки людини)) Уже наступного ранку працівники встановили всі датчики',
 //   },
 // ];
-
-export const ceramicsList = [
+export interface CeramicsListTypes {
+  id?: string;
+  title: string;
+  description: string[];
+  icn: string;
+}
+export const ceramicsList: CeramicsListTypes[] = [
   {
     id: uuidv4(),
     title: 'TURMALIN',
     description: [
-      'Pri zagrijavanju zrači niskofrekventnim magnetnim poljem/, isijava INF. zračenje, Anione',
-      'Potiče jačanje metabolizma stanica, izmjenu tvari u organizmu. Potiče obnovu limfnog i hormonalnog sustava',
+      'Potiče jačanje metabolizma stanica, izmjenu tvari u organizmu',
       'Potiče jačanje imuniteta',
-      'Osigurava energiju za organizam',
       'Poboljšava dotok hrane u organe i tkiva',
       'Poboljšava kvalitetu krvi',
       'Razrjeđuje gustu',
     ],
-    icn: ContactIcn,
+    icn: ceramics1,
   },
   {
     id: uuidv4(),
     title: 'ELVAN',
     description: [
-      'Pri zagrijavanju zrači niskofrekventnim magnetnim poljem/, isijava INF. zračenje, Anione',
-      'Potiče jačanje metabolizma stanica, izmjenu tvari u organizmu. Potiče obnovu limfnog i hormonalnog sustava',
-      'Potiče jačanje imuniteta',
-      'Osigurava energiju za organizam',
-      'Poboljšava dotok hrane u organe i tkiva',
-      'Poboljšava kvalitetu krvi',
-      'Razrjeđuje gustu',
+      'Mineral koristan za zdravlje kože',
+      'Apsorbira štetne tvari i teške elemente',
+      'Čisti vodu',
+      'Izvor je dugovalnog infracrvenog zračenja',
     ],
-    icn: InfoIcn,
+    icn: ceramics2,
   },
   {
     id: uuidv4(),
     title: 'GERMANIJ',
     description: [
-      'Pri zagrijavanju zrači niskofrekventnim magnetnim poljem/, isijava INF. zračenje, Anione',
-      'Potiče jačanje metabolizma stanica, izmjenu tvari u organizmu. Potiče obnovu limfnog i hormonalnog sustava',
-      'Potiče jačanje imuniteta',
-      'Osigurava energiju za organizam',
-      'Poboljšava dotok hrane u organe i tkiva',
-      'Poboljšava kvalitetu krvi',
-      'Razrjeđuje gustu',
+      'Prenosi kisik (O2) u tkivima organizma',
+      'Ima biocidni učinak (antivirusna, antifugicidna, antibakterijska svojstva)',
+      'Smanjuje bol',
+      'Stimulira imunitet',
     ],
-    icn: MeetingIcn,
+    icn: ceramics3,
   },
   {
     id: uuidv4(),
     title: 'VULKANSKE STIJENE',
     description: [
-      'Pri zagrijavanju zrači niskofrekventnim magnetnim poljem/, isijava INF. zračenje, Anione',
-      'Potiče jačanje metabolizma stanica, izmjenu tvari u organizmu. Potiče obnovu limfnog i hormonalnog sustava',
-      'Potiče jačanje imuniteta',
-      'Osigurava energiju za organizam',
-      'Poboljšava dotok hrane u organe i tkiva',
-      'Poboljšava kvalitetu krvi',
-      'Razrjeđuje gustu',
+      'Zahvaljujući njima legura poprima čvrstoću',
+      'Glavna je prednost: Dugo zadržavanje topline',
     ],
-    icn: ProtectedIcn,
+    icn: ceramics4,
   },
 ];
 

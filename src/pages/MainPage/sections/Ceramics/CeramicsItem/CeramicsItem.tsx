@@ -1,18 +1,21 @@
 import classes from './CeramicsItem.module.scss';
 
-const CeramicsItem = ({ Icn, title, description, order }) => {
+import { CeramicsListTypes } from '../../../../../data/data';
+
+const CeramicsItem: React.FC<CeramicsListTypes> = ({ icn, title, description }) => {
   return (
     <li className={classes.ceramics__item}>
       <div>
-        <div className={classes.ceramics__icn}>{<Icn />}</div>
+        <div className={classes.ceramics__icn}>
+          <img src={icn} alt={title} />
+        </div>
       </div>
       <h3 className={classes.ceramics__subtitle}>{title}</h3>
-      <ul>
+      <ul className={classes.ceramics__list}>
         {description.map((item) => {
           return <li key={item}>{item}</li>;
         })}
       </ul>
-      <div className={classes.ceramics__order}>{order + 1}</div>
     </li>
   );
 };

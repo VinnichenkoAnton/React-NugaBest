@@ -6,20 +6,19 @@ import classes from './Ceramics.module.scss';
 
 import { ceramicsList } from '../../../../data/data';
 
-const Ceramics = () => {
+const Ceramics: React.FC = () => {
   return (
     <section className={classes.ceramics}>
       <Container>
         <Title text="TURMANIJEVA KERAMIKA" />
         <ul className={classes.ceramics__list}>
-          {ceramicsList.map((item, index) => {
+          {ceramicsList.map((item) => {
             return (
               <CeramicsItem
                 key={item.id}
-                Icn={item.icn}
+                icn={item.icn}
                 title={item.title}
                 description={item.description}
-                order={index}
               />
             );
           })}

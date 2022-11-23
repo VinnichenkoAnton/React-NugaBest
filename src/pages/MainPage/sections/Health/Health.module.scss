@@ -2,7 +2,8 @@
 
 .health {
     padding-top: 70px;
-    min-height: 60vh;
+    height: 60vh;
+    min-height: 514px;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../../../resources/health/health.png') no-repeat 50%/cover;
     filter: drop-shadow(0.7);
     &__title {
