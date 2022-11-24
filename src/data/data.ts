@@ -53,7 +53,7 @@ import prizes from '../resources/numericInfo/prizes.svg';
 // //ceramicslList
 import ceramics1 from '../resources/ceramics/ceramics1.png';
 import ceramics2 from '../resources/ceramics/ceramics2.png';
-import ceramics3 from '../resources/ceramics/ceramics5.png';
+import ceramics3 from '../resources/ceramics/ceramics3.png';
 import ceramics4 from '../resources/ceramics/ceramics4.png';
 
 // //footerSocialList
@@ -331,6 +331,90 @@ export const ceramicsList: CeramicsListTypes[] = [
       'Glavna je prednost: Dugo zadržavanje topline',
     ],
     icn: ceramics4,
+  },
+];
+
+export interface VideosListTypes {
+  id: string;
+  title: string;
+  video: string;
+}
+export const videosList: VideosListTypes[] = [
+  {
+    id: uuidv4(),
+    title: 'Učinak TURMANIJA i NANO-DIJAMANTNE Turmanijeve keramike na LJUDSKO TIJELO',
+    video: 'https://www.youtube.com/embed/OJuHxaFhbNc',
+  },
+  {
+    id: uuidv4(),
+    title: 'TOP 5 razloga za kupnju NUGA BEST N5 masažera',
+    video: 'https://www.youtube.com/embed/HtmuzXLYS04',
+  },
+  {
+    id: uuidv4(),
+    title: 'Najpopularniji NUGA BEST proizvod | Prednosti Turmanijeve Prostirke',
+    video: 'https://www.youtube.com/embed/2S48_rcvEp8',
+  },
+  {
+    id: uuidv4(),
+    title: 'Zašto je TURMANIJ dobar za vaše tijelo? UNIVERZALNI uređaj za JAČANJE ZDRAVLJA',
+    video: 'https://www.youtube.com/embed/a3VV2rGUeVc',
+  },
+  {
+    id: uuidv4(),
+    title:
+      'Riješit će vas BOLOVA u NOGAMA! Podcast s liječnikom o prevenciji bolesti nogu i masaži. Zdravlje TV',
+    video: 'https://www.youtube.com/embed/rUNPBgVsIwg',
+  },
+  {
+    id: uuidv4(),
+    title: 'KAKO poboljšati cjelokupno stanje TIJELA | Prednosti toplinskog stimulatora MHP-100',
+    video: 'https://www.youtube.com/embed/-Gk4mlC5VAE',
+  },
+];
+
+export interface ContactsListTypes {
+  id: string;
+  address: string;
+  phone: number;
+  email: string;
+  map: string;
+}
+export const contactsList: ContactsListTypes[] = [
+  {
+    id: uuidv4(),
+    address: 'Bosutska, 9, 10000 Zagreb',
+    phone: +385923435203,
+    email: 'mail@gmail.com',
+    map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.4190019442008!2d30.394320315727978!3d50.358741079462746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9cf4d9d10cb%3A0xe0d580cdbf6c61af!2z0LLRg9C7LiDQmtC40ZfQstGB0YzQutCwLCAxMzgsINCT0LDRgtC90LUsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNjA!5e0!3m2!1sru!2sua!4v1667228260087!5m2!1sru!2sua',
+  },
+  {
+    id: uuidv4(),
+    address: 'Ulica Franа Supila 11, 51000 Rijeka',
+    phone: +385922305759,
+    email: 'mail@gmail.com',
+    map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.4190019442008!2d30.394320315727978!3d50.358741079462746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9cf4d9d10cb%3A0xe0d580cdbf6c61af!2z0LLRg9C7LiDQmtC40ZfQstGB0YzQutCwLCAxMzgsINCT0LDRgtC90LUsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNjA!5e0!3m2!1sru!2sua!4v1667228260087!5m2!1sru!2sua',
+  },
+  {
+    id: uuidv4(),
+    address: 'Prve poljanice 6, 10000, Zagreb',
+    phone: +385925027264,
+    email: 'mail@gmail.com',
+    map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.4190019442008!2d30.394320315727978!3d50.358741079462746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9cf4d9d10cb%3A0xe0d580cdbf6c61af!2z0LLRg9C7LiDQmtC40ZfQstGB0YzQutCwLCAxMzgsINCT0LDRgtC90LUsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNjA!5e0!3m2!1sru!2sua!4v1667228260087!5m2!1sru!2sua',
+  },
+  {
+    id: uuidv4(),
+    address: 'ul. Dužice 20, 10000, Zagreb',
+    phone: +385924178472,
+    email: 'mail@gmail.com',
+    map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.4190019442008!2d30.394320315727978!3d50.358741079462746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9cf4d9d10cb%3A0xe0d580cdbf6c61af!2z0LLRg9C7LiDQmtC40ZfQstGB0YzQutCwLCAxMzgsINCT0LDRgtC90LUsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNjA!5e0!3m2!1sru!2sua!4v1667228260087!5m2!1sru!2sua',
+  },
+  {
+    id: uuidv4(),
+    address: 'Komarski put 14, 10000, Zagreb',
+    phone: +385991927120,
+    email: 'mail@gmail.com',
+    map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.4190019442008!2d30.394320315727978!3d50.358741079462746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9cf4d9d10cb%3A0xe0d580cdbf6c61af!2z0LLRg9C7LiDQmtC40ZfQstGB0YzQutCwLCAxMzgsINCT0LDRgtC90LUsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNjA!5e0!3m2!1sru!2sua!4v1667228260087!5m2!1sru!2sua',
   },
 ];
 

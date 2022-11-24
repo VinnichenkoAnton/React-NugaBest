@@ -4,16 +4,18 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+        gap: 10px;
         justify-content: space-between;
         align-items: flex-start;
     }
 }
 
-@media (max-width: 991px) {
-    /* 768 */
+@media (max-width: 1199px) {
+    /* 992 */
     .ceramics {
         &__list {
-            justify-content: center;
+            justify-content: space-around;
         }
     }
 }
+

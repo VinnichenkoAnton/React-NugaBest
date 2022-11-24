@@ -7,6 +7,7 @@ import NumericInfo from './sections/NumericInfo/NumericInfo';
 import SingleProduct from '../../components/SingleProduct/SingleProduct';
 import Health from './sections/Health/Health';
 import Ceramics from './sections/Ceramics/Ceramics';
+import Videos from './sections/Videos/Videos';
 // import ContactUs from '../../components/ContactUs/ContactUs';
 // import Tabs from '../../components/Tabs/Tabs';
 // import Advantages from './sections/Advantages/Advantages';
@@ -33,8 +34,6 @@ const MainPage: React.FC = () => {
       <SingleProduct
         picture={
           <iframe
-            // width="600"
-            // height="400"
             src="https://www.youtube.com/embed/Z_41lwfaNmk"
             title="YouTube video player"
             frameBorder="0"
@@ -47,6 +46,7 @@ const MainPage: React.FC = () => {
       />
       <Health />
       <Ceramics />
+      <Videos />
     </>
   );
 };

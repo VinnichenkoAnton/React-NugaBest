@@ -9,7 +9,7 @@ const MainPage = lazy(() => import('./pages/MainPage/MainPage'));
 // const AboutCompanyPage = lazy(() => import('./pages/AboutCompanyPage/AboutCompanyPage'));
 // const OurServicesPage = lazy(() => import('./pages/OurServicesPage/OurServicesPage'));
 // const SingleProductPage = lazy(() => import('./pages/SingleProductPage/SingleProductPage'));
-// const ContactsPage = lazy(() => import('./pages/ContactsPage/ContactsPage'));
+const ContactsPage = lazy(() => import('./pages/ContactsPage/ContactsPage'));
 // const PolicyPage = lazy(() => import('./pages/PolicyPage/PolicyPage'));
 const Page404 = lazy(() => import('./pages/404/404'));
 
@@ -45,10 +45,10 @@ const AnimatedSwitch = () => {
     <div className={`${transitionStage}`} onAnimationEnd={handleAnimationEnd}>
       <Routes location={displayLocation}>
         <Route path="/" element={<MainPage />} />
+        <Route path="contacts" element={<ContactsPage />} />
         {/* <Route path="aboutcompany" element={<AboutCompanyPage />} />
         <Route path="services" element={<OurServicesPage />} />
         <Route path="services/:id" element={<SingleProductPage />} />
-        <Route path="contacts" element={<ContactsPage />} />
         <Route path="policy" element={<PolicyPage />} />*/}
         <Route path="notfound" element={<Page404 />} />
         <Route path="*" element={<Navigate to="notfound" replace />} />
