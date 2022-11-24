@@ -3,7 +3,7 @@
 import Header from '../../layouts/Header/Header';
 import ContactsInfo from './sections/ContactsInfo/ContactsInfo';
 
-const ContactsPage = () => {
+const ContactsPage: React.FC = () => {
   return (
     <>
       {/* <Helmet>

@@ -1,6 +1,11 @@
 import classes from './ContactLink.module.scss';
 
-const ContactLink = ({ href, Icn, text, className }) => {
+const ContactLink: React.FC<{
+  href: string;
+  Icn: React.FC<React.SVGProps<SVGSVGElement>>;
+  text: string;
+  className: string;
+}> = ({ href, Icn, text, className }) => {
   const contactLinkClasses = `${classes.contact} ${className}`;
   return (
     <a href={href} className={contactLinkClasses}>

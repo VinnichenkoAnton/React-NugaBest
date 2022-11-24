@@ -8,7 +8,7 @@ import { ReactComponent as Phoneicn } from '../../../../resources/header/phoneic
 import { ReactComponent as Emailicn } from '../../../../resources/header/emailicn.svg';
 import { contactsList } from '../../../../data/data';
 
-const ContactsInfo = () => {
+const ContactsInfo: React.FC = () => {
   return (
     <section className={classes.continfo}>
       <Container>
@@ -23,7 +23,6 @@ const ContactsInfo = () => {
                   className={classes.continfo__contactlink}
                   href={`tel:${item.phone}`}
                   Icn={Phoneicn}
-                  alt="Phone"
                   text={item.phone}
                 />
                 <div className={classes.continfo__subtitle}>Або напишіть нам на пошту</div>
@@ -31,7 +30,6 @@ const ContactsInfo = () => {
                   className={classes.continfo__contactlink}
                   href={`mailto:${item.email}`}
                   Icn={Emailicn}
-                  alt="Email"
                   text={item.email}
                 />
               </div>
@@ -39,7 +37,6 @@ const ContactsInfo = () => {
                 <iframe
                   title="Location"
                   src={item.map}
-                  allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>

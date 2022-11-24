@@ -12,43 +12,30 @@ import customers from '../resources/numericInfo/customers.svg';
 import prizes from '../resources/numericInfo/prizes.svg';
 
 // //firstTabList
-// import { ReactComponent as Videoicn } from '../resources/tabs/private/icns/videoicn.svg';
-// import { ReactComponent as Houseicn } from '../resources/tabs/private/icns/houseicn.svg';
-// import { ReactComponent as Flaticn } from '../resources/tabs/private/icns/flaticn.svg';
-// import { ReactComponent as Alarmicn } from '../resources/tabs/private/icns/alarmicn.svg';
-// import { ReactComponent as Complexicn } from '../resources/tabs/private/icns/complexicn.svg';
-// import video from '../resources/tabs/private/imgs/video.jpg';
-// import house from '../resources/tabs/private/imgs/house.jpg';
-// import flat from '../resources/tabs/private/imgs/flat.jpg';
-// import alarm from '../resources/tabs/private/imgs/alarm.jpg';
-// import complex from '../resources/tabs/private/imgs/complex.jpg';
+import { ReactComponent as Videoicn } from '../resources/tabs/private/icns/videoicn.svg';
+import { ReactComponent as Houseicn } from '../resources/tabs/private/icns/houseicn.svg';
+import { ReactComponent as Flaticn } from '../resources/tabs/private/icns/flaticn.svg';
+import { ReactComponent as Alarmicn } from '../resources/tabs/private/icns/alarmicn.svg';
+import { ReactComponent as Complexicn } from '../resources/tabs/private/icns/complexicn.svg';
+import video from '../resources/tabs/private/imgs/video.jpg';
+import house from '../resources/tabs/private/imgs/house.jpg';
+import flat from '../resources/tabs/private/imgs/flat.jpg';
+import alarm from '../resources/tabs/private/imgs/alarm.jpg';
+import complex from '../resources/tabs/private/imgs/complex.jpg';
 
 // //secondTabList
-// import { ReactComponent as Enterpreneuricn } from '../resources/tabs/business/icns/enterpreneuricn.svg';
-// import { ReactComponent as Storeicn } from '../resources/tabs/business/icns/storeicn.svg';
-// import { ReactComponent as Officeicn } from '../resources/tabs/business/icns/officeicn.svg';
-// import { ReactComponent as Buildingicn } from '../resources/tabs/business/icns/buildingicn.svg';
-// import { ReactComponent as Warehouseicn } from '../resources/tabs/business/icns/warehouseicn.svg';
-// import { ReactComponent as Industryicn } from '../resources/tabs/business/icns/industryicn.svg';
-// import enterpreneur from '../resources/tabs/business/imgs/enterpreneur.jpg';
-// import store from '../resources/tabs/business/imgs/store.jpg';
-// import office from '../resources/tabs/business/imgs/office.jpeg';
-// import building from '../resources/tabs/business/imgs/building.jpg';
-// import warehouse from '../resources/tabs/business/imgs/warehouse.jpg';
-// import industry from '../resources/tabs/business/imgs/industry.jpg';
-
-// //advantagesList
-// import { ReactComponent as Locationicn } from '../resources/advantages/icns/locationicn.svg';
-// import { ReactComponent as Allinclusiveicn } from '../resources/advantages/icns/allinclusiveicn.svg';
-// import { ReactComponent as Responsibilityicn } from '../resources/advantages/icns/responsibilityicn.svg';
-// import { ReactComponent as Remotecntrlicn } from '../resources/advantages/icns/remotectrlicn.svg';
-// import { ReactComponent as Professionalicn } from '../resources/advantages/icns/professionalicn.svg';
-// import { ReactComponent as Individualicn } from '../resources/advantages/icns/individualicn.svg';
-
-// //reviewsList
-// import reviewImage1 from '../resources/reviews/review_1.jpg';
-// import reviewImage2 from '../resources/reviews/review_2.jpg';
-// import reviewImage3 from '../resources/reviews/review_3.jpg';
+import { ReactComponent as Enterpreneuricn } from '../resources/tabs/business/icns/enterpreneuricn.svg';
+import { ReactComponent as Storeicn } from '../resources/tabs/business/icns/storeicn.svg';
+import { ReactComponent as Officeicn } from '../resources/tabs/business/icns/officeicn.svg';
+import { ReactComponent as Buildingicn } from '../resources/tabs/business/icns/buildingicn.svg';
+import { ReactComponent as Warehouseicn } from '../resources/tabs/business/icns/warehouseicn.svg';
+import { ReactComponent as Industryicn } from '../resources/tabs/business/icns/industryicn.svg';
+import enterpreneur from '../resources/tabs/business/imgs/enterpreneur.jpg';
+import store from '../resources/tabs/business/imgs/store.jpg';
+import office from '../resources/tabs/business/imgs/office.jpeg';
+import building from '../resources/tabs/business/imgs/building.jpg';
+import warehouse from '../resources/tabs/business/imgs/warehouse.jpg';
+import industry from '../resources/tabs/business/imgs/industry.jpg';
 
 // //ceramicslList
 import ceramics1 from '../resources/ceramics/ceramics1.png';
@@ -103,185 +90,122 @@ export const numericInfoList: NumericListTypes[] = [
   { id: uuidv4(), img: prizes, title: "Об'єктів", amount: 50 },
 ];
 
-// export const firstTabList = [
-//   {
-//     id: 'ft1',
-//     title: 'Відеоспостереження',
-//     img: video,
-//     icn: Videoicn,
-//     description:
-//       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-//     eqvprice: 'Від 5000 грн',
-//     monthprice: 'Від 300грн/місяць',
-//   },
-//   {
-//     id: 'ft2',
-//     title: 'Охорона будинків',
-//     img: house,
-//     icn: Houseicn,
-//     description:
-//       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-//     eqvprice: 'Від 5000 грн',
-//     monthprice: 'Від 300грн/місяць',
-//   },
-//   {
-//     id: 'ft3',
-//     title: 'Охорона квартир',
-//     img: flat,
-//     icn: Flaticn,
-//     description:
-//       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-//     eqvprice: 'Від 5000 грн',
-//     monthprice: 'Від 300грн/місяць',
-//   },
-//   {
-//     id: 'ft4',
-//     title: 'Охоронна сигналізація',
-//     img: alarm,
-//     icn: Alarmicn,
-//     description:
-//       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-//     eqvprice: 'Від 5000 грн',
-//     monthprice: 'Від 300грн/місяць',
-//   },
-//   {
-//     id: 'ft5',
-//     title: 'Охорона житлових комплексів',
-//     img: complex,
-//     icn: Complexicn,
-//     description:
-//       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-//     eqvprice: 'Від 5000 грн',
-//     monthprice: 'Від 300грн/місяць',
-//   },
-// ];
+export const firstTabList = [
+  {
+    id: 'ft1',
+    title: 'Відеоспостереження',
+    img: video,
+    icn: Videoicn,
+    description:
+      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
+    eqvprice: 'Від 5000 грн',
+    monthprice: 'Від 300грн/місяць',
+  },
+  {
+    id: 'ft2',
+    title: 'Охорона будинків',
+    img: house,
+    icn: Houseicn,
+    description:
+      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
+    eqvprice: 'Від 5000 грн',
+    monthprice: 'Від 300грн/місяць',
+  },
+  {
+    id: 'ft3',
+    title: 'Охорона квартир',
+    img: flat,
+    icn: Flaticn,
+    description:
+      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
+    eqvprice: 'Від 5000 грн',
+    monthprice: 'Від 300грн/місяць',
+  },
+  {
+    id: 'ft4',
+    title: 'Охоронна сигналізація',
+    img: alarm,
+    icn: Alarmicn,
+    description:
+      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
+    eqvprice: 'Від 5000 грн',
+    monthprice: 'Від 300грн/місяць',
+  },
+  {
+    id: 'ft5',
+    title: 'Охорона житлових комплексів',
+    img: complex,
+    icn: Complexicn,
+    description:
+      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
+    eqvprice: 'Від 5000 грн',
+    monthprice: 'Від 300грн/місяць',
+  },
+];
 
-// export const secondTabList = [
-//   {
-//     id: 'st1',
-//     title: 'Охорона підприємств',
-//     img: enterpreneur,
-//     icn: Enterpreneuricn,
-//     description:
-//       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-//     eqvprice: 'Від 5000 грн',
-//     monthprice: 'Від 300грн/місяць',
-//   },
-//   {
-//     id: 'st2',
-//     title: 'Охорона магазинів',
-//     img: store,
-//     icn: Storeicn,
-//     description:
-//       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-//     eqvprice: 'Від 5000 грн',
-//     monthprice: 'Від 300грн/місяць',
-//   },
-//   {
-//     id: 'st3',
-//     title: 'Охорона офісів',
-//     img: office,
-//     icn: Officeicn,
-//     description:
-//       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-//     eqvprice: 'Від 5000 грн',
-//     monthprice: 'Від 300грн/місяць',
-//   },
-//   {
-//     id: 'st4',
-//     title: 'Охоронна будівництва',
-//     img: building,
-//     icn: Buildingicn,
-//     description:
-//       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-//     eqvprice: 'Від 5000 грн',
-//     monthprice: 'Від 300грн/місяць',
-//   },
-//   {
-//     id: 'st5',
-//     title: 'Охорона нежитлових приміщень',
-//     img: warehouse,
-//     icn: Warehouseicn,
-//     description:
-//       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-//     eqvprice: 'Від 5000 грн',
-//     monthprice: 'Від 300грн/місяць',
-//   },
-//   {
-//     id: 'st6',
-//     title: "Охорона промислових об'єктів",
-//     img: industry,
-//     icn: Industryicn,
-//     description:
-//       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-//     eqvprice: 'Від 5000 грн',
-//     monthprice: 'Від 300грн/місяць',
-//   },
-// ];
+export const secondTabList = [
+  {
+    id: 'st1',
+    title: 'Охорона підприємств',
+    img: enterpreneur,
+    icn: Enterpreneuricn,
+    description:
+      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
+    eqvprice: 'Від 5000 грн',
+    monthprice: 'Від 300грн/місяць',
+  },
+  {
+    id: 'st2',
+    title: 'Охорона магазинів',
+    img: store,
+    icn: Storeicn,
+    description:
+      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
+    eqvprice: 'Від 5000 грн',
+    monthprice: 'Від 300грн/місяць',
+  },
+  {
+    id: 'st3',
+    title: 'Охорона офісів',
+    img: office,
+    icn: Officeicn,
+    description:
+      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
+    eqvprice: 'Від 5000 грн',
+    monthprice: 'Від 300грн/місяць',
+  },
+  {
+    id: 'st4',
+    title: 'Охоронна будівництва',
+    img: building,
+    icn: Buildingicn,
+    description:
+      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
+    eqvprice: 'Від 5000 грн',
+    monthprice: 'Від 300грн/місяць',
+  },
+  {
+    id: 'st5',
+    title: 'Охорона нежитлових приміщень',
+    img: warehouse,
+    icn: Warehouseicn,
+    description:
+      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
+    eqvprice: 'Від 5000 грн',
+    monthprice: 'Від 300грн/місяць',
+  },
+  {
+    id: 'st6',
+    title: "Охорона промислових об'єктів",
+    img: industry,
+    icn: Industryicn,
+    description:
+      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
+    eqvprice: 'Від 5000 грн',
+    monthprice: 'Від 300грн/місяць',
+  },
+];
 
-// export const advantagesList = [
-//   {
-//     id: uuidv4(),
-//     subtitle: 'Працюємо під ключ',
-//     description:
-//       'Беремо на себе всі питання: охоронна сигналізація, сервісне обслуговування, цілодобовий захист',
-//     icn: Allinclusiveicn,
-//   },
-//   {
-//     id: uuidv4(),
-//     subtitle: 'Ми завжди поряд',
-//     description: 'Групи швидкого реагування завжди на чергуванні поряд з Вами. Прибуття 2-10 хв',
-//     icn: Locationicn,
-//   },
-//   {
-//     id: uuidv4(),
-//     subtitle: 'Відповідальність',
-//     description: "Ми сумлінно виконуємо свої обов'язки і виїзджаємо на кожен виклик",
-//     icn: Responsibilityicn,
-//   },
-//   {
-//     id: uuidv4(),
-//     subtitle: 'Пультова система',
-//     description: 'Власний пульт моніторингу працює 24/7',
-//     icn: Remotecntrlicn,
-//   },
-//   {
-//     id: uuidv4(),
-//     subtitle: 'Професіоналізм',
-//     description: 'У нас працюють лише висококваліфіковані спеціалісти',
-//     icn: Professionalicn,
-//   },
-//   {
-//     id: uuidv4(),
-//     subtitle: 'Персональний підхід',
-//     description: 'Ми працюємо з клієнтом індивідуально для задоволення потреб кожного',
-//     icn: Individualicn,
-//   },
-// ];
-
-// export const reviewsList = [
-//   {
-//     img: reviewImage1,
-//     alt: 'Фото першого автора',
-//     title: 'Ложкіна Олена',
-//     description:
-//       'Задоволена роботою компанії на всі 100, кілька разів спрацювувала сигналізація, екіпаж прибуває буквально за пару хвилин. Лайк за оперативність!!!',
-//   },
-//   {
-//     img: reviewImage2,
-//     alt: 'Фото другого автора',
-//     title: 'Миль Богдан',
-//     description:
-//       'Якість охорони на рівні. Ціни доступні. Рекомендую. Користуюсь послугами компанії уже більше року.',
-//   },
-//   {
-//     img: reviewImage3,
-//     alt: 'Фото третього автора',
-//     title: 'Кобка Анастасія',
-//     description:
-//       'Все дуже оперативно і якісно: лишила на сайті заявку, менш ніж через 2 хвилини зателефонував менеджер, який проконсультував мене максимально повно і зрозуміло, відповівши на всі питання, які в мене виникли як у дуже далекої від техніки людини)) Уже наступного ранку працівники встановили всі датчики',
-//   },
-// ];
 export interface CeramicsListTypes {
   id?: string;
   title: string;
@@ -376,7 +300,7 @@ export const videosList: VideosListTypes[] = [
 export interface ContactsListTypes {
   id: string;
   address: string;
-  phone: number;
+  phone: string;
   email: string;
   map: string;
 }
@@ -384,35 +308,35 @@ export const contactsList: ContactsListTypes[] = [
   {
     id: uuidv4(),
     address: 'Bosutska, 9, 10000 Zagreb',
-    phone: +385923435203,
+    phone: '+385923435203',
     email: 'mail@gmail.com',
     map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.4190019442008!2d30.394320315727978!3d50.358741079462746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9cf4d9d10cb%3A0xe0d580cdbf6c61af!2z0LLRg9C7LiDQmtC40ZfQstGB0YzQutCwLCAxMzgsINCT0LDRgtC90LUsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNjA!5e0!3m2!1sru!2sua!4v1667228260087!5m2!1sru!2sua',
   },
   {
     id: uuidv4(),
     address: 'Ulica Franа Supila 11, 51000 Rijeka',
-    phone: +385922305759,
+    phone: '+385922305759',
     email: 'mail@gmail.com',
     map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.4190019442008!2d30.394320315727978!3d50.358741079462746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9cf4d9d10cb%3A0xe0d580cdbf6c61af!2z0LLRg9C7LiDQmtC40ZfQstGB0YzQutCwLCAxMzgsINCT0LDRgtC90LUsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNjA!5e0!3m2!1sru!2sua!4v1667228260087!5m2!1sru!2sua',
   },
   {
     id: uuidv4(),
     address: 'Prve poljanice 6, 10000, Zagreb',
-    phone: +385925027264,
+    phone: '+385925027264',
     email: 'mail@gmail.com',
     map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.4190019442008!2d30.394320315727978!3d50.358741079462746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9cf4d9d10cb%3A0xe0d580cdbf6c61af!2z0LLRg9C7LiDQmtC40ZfQstGB0YzQutCwLCAxMzgsINCT0LDRgtC90LUsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNjA!5e0!3m2!1sru!2sua!4v1667228260087!5m2!1sru!2sua',
   },
   {
     id: uuidv4(),
     address: 'ul. Dužice 20, 10000, Zagreb',
-    phone: +385924178472,
+    phone: '+385924178472',
     email: 'mail@gmail.com',
     map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.4190019442008!2d30.394320315727978!3d50.358741079462746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9cf4d9d10cb%3A0xe0d580cdbf6c61af!2z0LLRg9C7LiDQmtC40ZfQstGB0YzQutCwLCAxMzgsINCT0LDRgtC90LUsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNjA!5e0!3m2!1sru!2sua!4v1667228260087!5m2!1sru!2sua',
   },
   {
     id: uuidv4(),
     address: 'Komarski put 14, 10000, Zagreb',
-    phone: +385991927120,
+    phone: '+385991927120',
     email: 'mail@gmail.com',
     map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.4190019442008!2d30.394320315727978!3d50.358741079462746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9cf4d9d10cb%3A0xe0d580cdbf6c61af!2z0LLRg9C7LiDQmtC40ZfQstGB0YzQutCwLCAxMzgsINCT0LDRgtC90LUsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNjA!5e0!3m2!1sru!2sua!4v1667228260087!5m2!1sru!2sua',
   },
