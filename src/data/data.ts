@@ -12,30 +12,18 @@ import customers from '../resources/numericInfo/customers.svg';
 import prizes from '../resources/numericInfo/prizes.svg';
 
 // //firstTabList
-import { ReactComponent as Videoicn } from '../resources/tabs/private/icns/videoicn.svg';
-import { ReactComponent as Houseicn } from '../resources/tabs/private/icns/houseicn.svg';
-import { ReactComponent as Flaticn } from '../resources/tabs/private/icns/flaticn.svg';
-import { ReactComponent as Alarmicn } from '../resources/tabs/private/icns/alarmicn.svg';
-import { ReactComponent as Complexicn } from '../resources/tabs/private/icns/complexicn.svg';
-import video from '../resources/tabs/private/imgs/video.jpg';
-import house from '../resources/tabs/private/imgs/house.jpg';
-import flat from '../resources/tabs/private/imgs/flat.jpg';
-import alarm from '../resources/tabs/private/imgs/alarm.jpg';
-import complex from '../resources/tabs/private/imgs/complex.jpg';
+import n4 from '../resources/tabs/private/imgs/n4.png';
+import n5 from '../resources/tabs/private/imgs/n5.jpg';
 
 // //secondTabList
-import { ReactComponent as Enterpreneuricn } from '../resources/tabs/business/icns/enterpreneuricn.svg';
-import { ReactComponent as Storeicn } from '../resources/tabs/business/icns/storeicn.svg';
-import { ReactComponent as Officeicn } from '../resources/tabs/business/icns/officeicn.svg';
-import { ReactComponent as Buildingicn } from '../resources/tabs/business/icns/buildingicn.svg';
-import { ReactComponent as Warehouseicn } from '../resources/tabs/business/icns/warehouseicn.svg';
-import { ReactComponent as Industryicn } from '../resources/tabs/business/icns/industryicn.svg';
-import enterpreneur from '../resources/tabs/business/imgs/enterpreneur.jpg';
-import store from '../resources/tabs/business/imgs/store.jpg';
-import office from '../resources/tabs/business/imgs/office.jpeg';
-import building from '../resources/tabs/business/imgs/building.jpg';
-import warehouse from '../resources/tabs/business/imgs/warehouse.jpg';
-import industry from '../resources/tabs/business/imgs/industry.jpg';
+import t20 from '../resources/tabs/business/imgs/t20.jpg';
+import t11p from '../resources/tabs/business/imgs/t11p.jpg';
+import nm80 from '../resources/tabs/business/imgs/nm80.jpg';
+import nm90 from '../resources/tabs/business/imgs/nm90.jpg';
+import mhp100 from '../resources/tabs/business/imgs/mhp100.jpg';
+import e5 from '../resources/tabs/business/imgs/e5.jpg';
+import e3 from '../resources/tabs/business/imgs/e3.jpg';
+import nm200 from '../resources/tabs/business/imgs/nm200.jpg';
 
 // //ceramicslList
 import ceramics1 from '../resources/ceramics/ceramics1.png';
@@ -84,18 +72,25 @@ interface NumericListTypes {
   amount: number;
 }
 export const numericInfoList: NumericListTypes[] = [
-  { id: uuidv4(), img: established, title: 'Років', amount: 10 },
-  { id: uuidv4(), img: workers, title: 'Працівників', amount: 100 },
-  { id: uuidv4(), img: customers, title: 'Клієнтів', amount: 200 },
-  { id: uuidv4(), img: prizes, title: "Об'єктів", amount: 50 },
+  { id: uuidv4(), img: established, title: 'Godine', amount: 10 },
+  { id: uuidv4(), img: workers, title: 'Zaposlenici', amount: 100 },
+  { id: uuidv4(), img: customers, title: 'Kupci', amount: 200 },
+  { id: uuidv4(), img: prizes, title: 'Predmeti', amount: 50 },
 ];
 
-export const firstTabList = [
+export interface TabListTypes {
+  id: string;
+  title: string;
+  img: string;
+  description: string;
+  eqvprice: string;
+  monthprice: string;
+}
+export const firstTabList: TabListTypes[] = [
   {
     id: 'ft1',
-    title: 'Відеоспостереження',
-    img: video,
-    icn: Videoicn,
+    title: 'N4',
+    img: n4,
     description:
       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
     eqvprice: 'Від 5000 грн',
@@ -103,39 +98,8 @@ export const firstTabList = [
   },
   {
     id: 'ft2',
-    title: 'Охорона будинків',
-    img: house,
-    icn: Houseicn,
-    description:
-      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-    eqvprice: 'Від 5000 грн',
-    monthprice: 'Від 300грн/місяць',
-  },
-  {
-    id: 'ft3',
-    title: 'Охорона квартир',
-    img: flat,
-    icn: Flaticn,
-    description:
-      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-    eqvprice: 'Від 5000 грн',
-    monthprice: 'Від 300грн/місяць',
-  },
-  {
-    id: 'ft4',
-    title: 'Охоронна сигналізація',
-    img: alarm,
-    icn: Alarmicn,
-    description:
-      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-    eqvprice: 'Від 5000 грн',
-    monthprice: 'Від 300грн/місяць',
-  },
-  {
-    id: 'ft5',
-    title: 'Охорона житлових комплексів',
-    img: complex,
-    icn: Complexicn,
+    title: 'N5',
+    img: n5,
     description:
       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
     eqvprice: 'Від 5000 грн',
@@ -143,12 +107,11 @@ export const firstTabList = [
   },
 ];
 
-export const secondTabList = [
+export const secondTabList: TabListTypes[] = [
   {
     id: 'st1',
-    title: 'Охорона підприємств',
-    img: enterpreneur,
-    icn: Enterpreneuricn,
+    title: 'T20 Turmanijev tepih (prostirka za krevet)',
+    img: t20,
     description:
       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
     eqvprice: 'Від 5000 грн',
@@ -156,9 +119,8 @@ export const secondTabList = [
   },
   {
     id: 'st2',
-    title: 'Охорона магазинів',
-    img: store,
-    icn: Storeicn,
+    title: 'T11P Turmanijev tepih s dodatkom nanodijamantne keramike',
+    img: t11p,
     description:
       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
     eqvprice: 'Від 5000 грн',
@@ -166,9 +128,8 @@ export const secondTabList = [
   },
   {
     id: 'st3',
-    title: 'Охорона офісів',
-    img: office,
-    icn: Officeicn,
+    title: 'NM-80H',
+    img: nm80,
     description:
       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
     eqvprice: 'Від 5000 грн',
@@ -176,9 +137,8 @@ export const secondTabList = [
   },
   {
     id: 'st4',
-    title: 'Охоронна будівництва',
-    img: building,
-    icn: Buildingicn,
+    title: 'NM-90 Turmanijski pojas',
+    img: nm90,
     description:
       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
     eqvprice: 'Від 5000 грн',
@@ -186,9 +146,8 @@ export const secondTabList = [
   },
   {
     id: 'st5',
-    title: 'Охорона нежитлових приміщень',
-    img: warehouse,
-    icn: Warehouseicn,
+    title: 'Turmanijev prsluk MHP-100',
+    img: mhp100,
     description:
       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
     eqvprice: 'Від 5000 грн',
@@ -196,9 +155,26 @@ export const secondTabList = [
   },
   {
     id: 'st6',
-    title: "Охорона промислових об'єктів",
-    img: industry,
-    icn: Industryicn,
+    title: 'E5 Masažer za stopala',
+    img: e5,
+    description:
+      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
+    eqvprice: 'Від 5000 грн',
+    monthprice: 'Від 300грн/місяць',
+  },
+  {
+    id: 'st7',
+    title: 'E3 Turmanijev pojas miostimulator',
+    img: e3,
+    description:
+      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
+    eqvprice: 'Від 5000 грн',
+    monthprice: 'Від 300грн/місяць',
+  },
+  {
+    id: 'st8',
+    title: 'NM-200 tourmanium projektor',
+    img: nm200,
     description:
       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
     eqvprice: 'Від 5000 грн',
@@ -310,35 +286,35 @@ export const contactsList: ContactsListTypes[] = [
     address: 'Bosutska, 9, 10000 Zagreb',
     phone: '+385923435203',
     email: 'mail@gmail.com',
-    map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.4190019442008!2d30.394320315727978!3d50.358741079462746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9cf4d9d10cb%3A0xe0d580cdbf6c61af!2z0LLRg9C7LiDQmtC40ZfQstGB0YzQutCwLCAxMzgsINCT0LDRgtC90LUsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNjA!5e0!3m2!1sru!2sua!4v1667228260087!5m2!1sru!2sua',
+    map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.7041354684916!2d15.9814916!3d45.797154799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d65e8eb09a8b%3A0x4cb3e454815ba580!2zQm9zdXRza2EgdWwuIDksIDEwMDAwLCBaYWdyZWIsINCl0L7RgNCy0LDRgtC40Y8!5e0!3m2!1sru!2sua!4v1669366841599!5m2!1sru!2shr',
   },
   {
     id: uuidv4(),
     address: 'Ulica Franа Supila 11, 51000 Rijeka',
     phone: '+385922305759',
     email: 'mail@gmail.com',
-    map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.4190019442008!2d30.394320315727978!3d50.358741079462746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9cf4d9d10cb%3A0xe0d580cdbf6c61af!2z0LLRg9C7LiDQmtC40ZfQstGB0YzQutCwLCAxMzgsINCT0LDRgtC90LUsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNjA!5e0!3m2!1sru!2sua!4v1667228260087!5m2!1sru!2sua',
+    map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2805.0050614405422!2d14.439549116149967!3d45.328520250506344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4764a11e05eab4e1%3A0x14ef195e2f8acc61!2zVWwuIEZyYW5hIFN1cGlsYSAxMSwgNTEwMDAsIFJpamVrYSwg0KXQvtGA0LLQsNGC0LjRjw!5e0!3m2!1sru!2sua!4v1669367402479!5m2!1sru!2shr',
   },
   {
     id: uuidv4(),
     address: 'Prve poljanice 6, 10000, Zagreb',
     phone: '+385925027264',
     email: 'mail@gmail.com',
-    map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.4190019442008!2d30.394320315727978!3d50.358741079462746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9cf4d9d10cb%3A0xe0d580cdbf6c61af!2z0LLRg9C7LiDQmtC40ZfQstGB0YzQutCwLCAxMzgsINCT0LDRgtC90LUsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNjA!5e0!3m2!1sru!2sua!4v1667228260087!5m2!1sru!2sua',
+    map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.075803162102!2d16.067253716159108!3d45.82976461699578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476678174539b82b%3A0x9060faaf869119!2zUHJ2ZSBwb2xqYW5pY2UgNiwgMTAwMDAsIFphZ3JlYiwg0KXQvtGA0LLQsNGC0LjRjw!5e0!3m2!1sru!2sua!4v1669367501034!5m2!1sru!2shr',
   },
   {
     id: uuidv4(),
     address: 'ul. Dužice 20, 10000, Zagreb',
     phone: '+385924178472',
     email: 'mail@gmail.com',
-    map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.4190019442008!2d30.394320315727978!3d50.358741079462746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9cf4d9d10cb%3A0xe0d580cdbf6c61af!2z0LLRg9C7LiDQmtC40ZfQstGB0YzQutCwLCAxMzgsINCT0LDRgtC90LUsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNjA!5e0!3m2!1sru!2sua!4v1667228260087!5m2!1sru!2sua',
+    map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.7758786456557!2d15.951302216158433!3d45.79571761928102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d69460bce77f%3A0x9dbe615f52d9f297!2zRHXFvmljZSB1bC4gMjAsIDEwMDAwLCBaYWdyZWIsINCl0L7RgNCy0LDRgtC40Y8!5e0!3m2!1sru!2sua!4v1669367715961!5m2!1sru!2shr',
   },
   {
     id: uuidv4(),
     address: 'Komarski put 14, 10000, Zagreb',
     phone: '+385991927120',
     email: 'mail@gmail.com',
-    map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.4190019442008!2d30.394320315727978!3d50.358741079462746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9cf4d9d10cb%3A0xe0d580cdbf6c61af!2z0LLRg9C7LiDQmtC40ZfQstGB0YzQutCwLCAxMzgsINCT0LDRgtC90LUsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNjA!5e0!3m2!1sru!2sua!4v1667228260087!5m2!1sru!2sua',
+    map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.4861807498096!2d15.90592671615864!3d45.80152071889158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d146f5e4392d%3A0x4f056aae757a8699!2zS29tYXJza2kgcHV0IDE0LCAxMDAwMCwgWmFncmViLCDQpdC-0YDQstCw0YLQuNGP!5e0!3m2!1sru!2sua!4v1669367789071!5m2!1sru!2shr',
   },
 ];
 

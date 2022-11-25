@@ -10,21 +10,16 @@ import classes from './Tabs.module.scss';
 import { firstTabList } from '../../../../data/data';
 import { secondTabList } from '../../../../data/data';
 
-const Tabs = () => {
-  const [activeTab, setActiveTab] = useState('tab1');
+const Tabs: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<string>('tab1');
 
   return (
     <section className={classes.tabs}>
       <Title text="NAŠA PROIZVODNJA" />
       <ul className={classes.tabs__nav}>
+        <TabNavItem title="Kreveta" id="tab1" activeTab={activeTab} setActiveTab={setActiveTab} />
         <TabNavItem
-          title="Для приватних осіб"
-          id="tab1"
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-        />
-        <TabNavItem
-          title="Для бізнесу"
+          title="Ostala oprema"
           id="tab2"
           activeTab={activeTab}
           setActiveTab={setActiveTab}

@@ -15,17 +15,17 @@ const ContactsInfo: React.FC = () => {
         <Title text="Naši kontakti" />
         {contactsList.map((item) => {
           return (
-            <div className={classes.continfo__wrapper}>
+            <div className={classes.continfo__wrapper} key={item.id}>
               <div className={classes.continfo__info}>
                 <p className={classes.continfo__description}>{item.address}</p>
-                <div className={classes.continfo__subtitle}>Телефон</div>
+                <div className={classes.continfo__subtitle}>Telefon</div>
                 <ContactLink
                   className={classes.continfo__contactlink}
                   href={`tel:${item.phone}`}
                   Icn={Phoneicn}
                   text={item.phone}
                 />
-                <div className={classes.continfo__subtitle}>Або напишіть нам на пошту</div>
+                <div className={classes.continfo__subtitle}>Ili nam pišite na mail</div>
                 <ContactLink
                   className={classes.continfo__contactlink}
                   href={`mailto:${item.email}`}
