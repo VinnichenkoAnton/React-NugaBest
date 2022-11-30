@@ -4,7 +4,7 @@ import Header from '../../layouts/Header/Header';
 import MainScreen from './sections/MainScreen/MainScreen';
 // import Slider from '../../components/Slider/Slider';
 import NumericInfo from './sections/NumericInfo/NumericInfo';
-import SingleProduct from '../../components/SingleProduct/SingleProduct';
+import VideoWithText from '../../components/VideoWithText/VideoWithText';
 import Health from './sections/Health/Health';
 import Ceramics from './sections/Ceramics/Ceramics';
 import Videos from './sections/Videos/Videos';
@@ -31,16 +31,8 @@ const MainPage: React.FC = () => {
 
       {/* <Slider autoPlay={false} controls={true} sliderContent={sliderImagesList} /> */}
       <NumericInfo />
-      <SingleProduct
-        picture={
-          <iframe
-            src="https://www.youtube.com/embed/Z_41lwfaNmk"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        }
+      <VideoWithText
+        video="https://www.youtube.com/embed/Z_41lwfaNmk"
         title="VODEĆA MEĐUNARODNA KOMPANIJA"
         description='"Mi služimo čovječanstvu u skladu sa svojim srcem, donoseći zdravlje, integritet i ljubav. U našima salonima, koristeći novu tehnologiju zdravlja i jedinstveni marketing, postižemo svoj glavni cilj - usrećiti ljude!"'
       />

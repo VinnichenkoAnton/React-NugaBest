@@ -76,8 +76,8 @@
         background-color: transparent;
         box-shadow: 0px 0px 5px $main-color;
         color: $black-color;
-        background-color: transparent;
         &_active {
+            width: 238px;
             background: $main-color;
             box-shadow: 0px 0px 5px $main-color;
             color: $white-color;

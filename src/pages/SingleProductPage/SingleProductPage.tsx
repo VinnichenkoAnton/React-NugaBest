@@ -4,24 +4,24 @@ import { useParams } from 'react-router-dom';
 
 import Header from '../../layouts/Header/Header';
 import GoBack from '../../components/GoBack/GoBack';
-import SingleProduct from '../../components/SingleProduct/SingleProduct';
+import SingleProduct from './sections/SingleProduct/SingleProduct';
 
-import { firstTabList } from '../../data/data';
+import { firstTabList, TabListTypes } from '../../data/data';
 import { secondTabList } from '../../data/data';
 
-const SingleProductPage = () => {
-  const [singleProduct, setSingleProduct] = useState(null);
+const SingleProductPage: React.FC = () => {
+  const [singleProduct, setSingleProduct] = useState<TabListTypes | null>(null);
   const { id } = useParams();
 
   useEffect(() => {
-    const jointTabLists = [...firstTabList, ...secondTabList];
-    const filteredList = jointTabLists.filter((item) => item.id === id);
+    const jointTabLists: TabListTypes[] = [...firstTabList, ...secondTabList];
+    const filteredList: TabListTypes[] = jointTabLists.filter((item) => item.id === id);
     setSingleProduct(filteredList[0]);
   }, [id]);
 
   return (
     <>
-      <Header screen="second" title="Our Coffee" />
+      <Header />
       <GoBack />
 
       {singleProduct ? (
@@ -34,12 +34,12 @@ const SingleProductPage = () => {
             <title>{`Оберіг - ${singleProduct.title}`}</title>
           </Helmet> */}
           <SingleProduct
-            key={singleProduct.id}
+            id={singleProduct.id}
             img={singleProduct.img}
             title={singleProduct.title}
+            subtitle={singleProduct.subtitle}
             description={singleProduct.description}
-            monthprice={singleProduct.monthprice}
-            eqvprice={singleProduct.eqvprice}
+            additional={singleProduct.additional}
           />
         </>
       ) : null}

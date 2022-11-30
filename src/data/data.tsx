@@ -12,29 +12,26 @@ import customers from '../resources/numericInfo/customers.svg';
 import prizes from '../resources/numericInfo/prizes.svg';
 
 // //firstTabList
-import n4 from '../resources/tabs/private/imgs/n4.png';
-import n5 from '../resources/tabs/private/imgs/n5.jpg';
+import n4 from '../resources/tabs/beds/imgs/n4.png';
+import { textN4 } from '../resources/tabs/beds/texts';
+import n5 from '../resources/tabs/beds/imgs/n5.jpg';
+import { textN5 } from '../resources/tabs/beds/texts';
 
 // //secondTabList
-import t20 from '../resources/tabs/business/imgs/t20.jpg';
-import t11p from '../resources/tabs/business/imgs/t11p.jpg';
-import nm80 from '../resources/tabs/business/imgs/nm80.jpg';
-import nm90 from '../resources/tabs/business/imgs/nm90.jpg';
-import mhp100 from '../resources/tabs/business/imgs/mhp100.jpg';
-import e5 from '../resources/tabs/business/imgs/e5.jpg';
-import e3 from '../resources/tabs/business/imgs/e3.jpg';
-import nm200 from '../resources/tabs/business/imgs/nm200.jpg';
+import t20 from '../resources/tabs/otherEquipment/imgs/t20.jpg';
+import t11p from '../resources/tabs/otherEquipment/imgs/t11p.jpg';
+import nm80 from '../resources/tabs/otherEquipment/imgs/nm80.jpg';
+import nm90 from '../resources/tabs/otherEquipment/imgs/nm90.jpg';
+import mhp100 from '../resources/tabs/otherEquipment/imgs/mhp100.jpg';
+import e5 from '../resources/tabs/otherEquipment/imgs/e5.jpg';
+import e3 from '../resources/tabs/otherEquipment/imgs/e3.jpg';
+import nm200 from '../resources/tabs/otherEquipment/imgs/nm200.jpg';
 
 // //ceramicslList
 import ceramics1 from '../resources/ceramics/ceramics1.png';
 import ceramics2 from '../resources/ceramics/ceramics2.png';
 import ceramics3 from '../resources/ceramics/ceramics3.png';
 import ceramics4 from '../resources/ceramics/ceramics4.png';
-
-// //footerSocialList
-// import { ReactComponent as InstagramIcn } from '../resources/footer/instagramicn.svg';
-// import { ReactComponent as FacebookIcn } from '../resources/footer/facebookicn.svg';
-// import { ReactComponent as YoutubeIcn } from '../resources/footer/youtubeicn.svg';
 
 interface NavigationListTypes {
   text: string;
@@ -82,28 +79,28 @@ export interface TabListTypes {
   id: string;
   title: string;
   img: string;
+  subtitle?: string;
   description: string;
-  eqvprice: string;
-  monthprice: string;
+  additional?: JSX.Element;
 }
 export const firstTabList: TabListTypes[] = [
   {
     id: 'ft1',
     title: 'N4',
     img: n4,
+    subtitle: 'MASAŽA UZ UDOBU',
     description:
-      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-    eqvprice: 'Від 5000 грн',
-    monthprice: 'Від 300грн/місяць',
+      'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
+    additional: textN4,
   },
   {
     id: 'ft2',
     title: 'N5',
     img: n5,
+    subtitle: 'MASAŽA UZ UDOBU',
     description:
       'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-    eqvprice: 'Від 5000 грн',
-    monthprice: 'Від 300грн/місяць',
+    additional: textN5,
   },
 ];
 
@@ -112,73 +109,73 @@ export const secondTabList: TabListTypes[] = [
     id: 'st1',
     title: 'T20 Turmanijev tepih (prostirka za krevet)',
     img: t20,
+    subtitle: 'MASAŽA UZ UDOBU',
     description:
-      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-    eqvprice: 'Від 5000 грн',
-    monthprice: 'Від 300грн/місяць',
+      'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
+    additional: textN4,
   },
   {
     id: 'st2',
     title: 'T11P Turmanijev tepih s dodatkom nanodijamantne keramike',
     img: t11p,
+    subtitle: 'MASAŽA UZ UDOBU',
     description:
-      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-    eqvprice: 'Від 5000 грн',
-    monthprice: 'Від 300грн/місяць',
+      'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
+    additional: textN4,
   },
   {
     id: 'st3',
     title: 'NM-80H',
     img: nm80,
+    subtitle: 'MASAŽA UZ UDOBU',
     description:
-      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-    eqvprice: 'Від 5000 грн',
-    monthprice: 'Від 300грн/місяць',
+      'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
+    additional: textN4,
   },
   {
     id: 'st4',
     title: 'NM-90 Turmanijski pojas',
     img: nm90,
+    subtitle: 'MASAŽA UZ UDOBU',
     description:
-      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-    eqvprice: 'Від 5000 грн',
-    monthprice: 'Від 300грн/місяць',
+      'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
+    additional: textN4,
   },
   {
     id: 'st5',
     title: 'Turmanijev prsluk MHP-100',
     img: mhp100,
+    subtitle: 'MASAŽA UZ UDOBU',
     description:
-      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-    eqvprice: 'Від 5000 грн',
-    monthprice: 'Від 300грн/місяць',
+      'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
+    additional: textN4,
   },
   {
     id: 'st6',
     title: 'E5 Masažer za stopala',
     img: e5,
+    subtitle: 'MASAŽA UZ UDOBU',
     description:
-      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-    eqvprice: 'Від 5000 грн',
-    monthprice: 'Від 300грн/місяць',
+      'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
+    additional: textN4,
   },
   {
     id: 'st7',
     title: 'E3 Turmanijev pojas miostimulator',
     img: e3,
+    subtitle: 'MASAŽA UZ UDOBU',
     description:
-      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-    eqvprice: 'Від 5000 грн',
-    monthprice: 'Від 300грн/місяць',
+      'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
+    additional: textN4,
   },
   {
     id: 'st8',
     title: 'NM-200 tourmanium projektor',
     img: nm200,
+    subtitle: 'MASAŽA UZ UDOBU',
     description:
-      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-    eqvprice: 'Від 5000 грн',
-    monthprice: 'Від 300грн/місяць',
+      'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
+    additional: textN4,
   },
 ];
 
@@ -317,9 +314,3 @@ export const contactsList: ContactsListTypes[] = [
     map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.4861807498096!2d15.90592671615864!3d45.80152071889158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d146f5e4392d%3A0x4f056aae757a8699!2zS29tYXJza2kgcHV0IDE0LCAxMDAwMCwgWmFncmViLCDQpdC-0YDQstCw0YLQuNGP!5e0!3m2!1sru!2sua!4v1669367789071!5m2!1sru!2shr',
   },
 ];
-
-// export const footerSocialList = [
-//   { id: uuidv4(), link: '#', Icn: InstagramIcn },
-//   { id: uuidv4(), link: '#', Icn: FacebookIcn },
-//   { id: uuidv4(), link: '#', Icn: YoutubeIcn },
-// ];
