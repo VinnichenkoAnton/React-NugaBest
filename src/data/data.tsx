@@ -36,9 +36,9 @@ import { textT11P } from './tabs/texts';
 //NM80
 import nm80 from '../resources/tabs/otherEquipment/imgs/nm80.jpg';
 import nm80_2 from '../resources/tabs/otherEquipment/nm80/nm80_2.jpg';
-import nm80_3 from '../resources/tabs/otherEquipment/nm80/nm80_3.png';
-import nm80_4 from '../resources/tabs/otherEquipment/nm80/nm80_4.png';
-import nm80_5 from '../resources/tabs/otherEquipment/nm80/nm80_5.png';
+import nm80_3 from '../resources/tabs/otherEquipment/nm80/nm80_3.jpg';
+import nm80_4 from '../resources/tabs/otherEquipment/nm80/nm80_4.jpg';
+import nm80_5 from '../resources/tabs/otherEquipment/nm80/nm80_5.jpg';
 import { textNM80 } from './tabs/texts';
 //NM90
 import nm90 from '../resources/tabs/otherEquipment/imgs/nm90.jpg';
@@ -50,13 +50,13 @@ import nm90_6 from '../resources/tabs/otherEquipment/nm90/nm90_6.jpg';
 import { textNM90 } from './tabs/texts';
 //MHP100
 import mhp100 from '../resources/tabs/otherEquipment/imgs/mhp100.jpg';
-import mhp100_2 from '../resources/tabs/otherEquipment/mhp100/mhp100_2.png';
+import mhp100_2 from '../resources/tabs/otherEquipment/mhp100/mhp100_2.jpg';
 import { textMHP100 } from './tabs/texts';
 //E5
 import e5 from '../resources/tabs/otherEquipment/imgs/e5.jpg';
-import e5_2 from '../resources/tabs/otherEquipment/e5/e5_2.png';
-import e5_3 from '../resources/tabs/otherEquipment/e5/e5_3.png';
-import e5_4 from '../resources/tabs/otherEquipment/e5/e5_4.png';
+import e5_2 from '../resources/tabs/otherEquipment/e5/e5_2.jpg';
+import e5_3 from '../resources/tabs/otherEquipment/e5/e5_3.jpg';
+import e5_4 from '../resources/tabs/otherEquipment/e5/e5_4.jpg';
 import e5_5 from '../resources/tabs/otherEquipment/e5/e5_5.jpg';
 import { textE5 } from './tabs/texts';
 //E3

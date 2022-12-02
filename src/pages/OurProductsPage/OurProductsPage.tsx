@@ -1,6 +1,7 @@
 // import { Helmet } from 'react-helmet';
 
 import Header from '../../layouts/Header/Header';
+import Ceramics from '../../components/Ceramics/Ceramics';
 import Tabs from './sections/Tabs/Tabs';
 
 const AboutCompanyPage: React.FC = () => {
@@ -15,6 +16,7 @@ const AboutCompanyPage: React.FC = () => {
       </Helmet> */}
       <Header />
       <Tabs />
+      <Ceramics />
     </>
   );
 };

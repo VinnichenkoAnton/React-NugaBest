@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import Container from '../../../../components/UI/Container/Container';
 import Title from '../../../../components/UI/Title/Title';
 import TabContent from './TabsComponents/TabContent';
 import TabNavItem from './TabsComponents/TabNavItem';
@@ -15,25 +16,27 @@ const Tabs: React.FC = () => {
 
   return (
     <section className={classes.tabs}>
-      <Title text="NAŠA PROIZVODNJA" />
-      <ul className={classes.tabs__nav}>
-        <TabNavItem title="Kreveta" id="tab1" activeTab={activeTab} setActiveTab={setActiveTab} />
-        <TabNavItem
-          title="Ostala oprema"
-          id="tab2"
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-        />
-      </ul>
+      <Container>
+        <Title text="NAŠA PROIZVODNJA" />
+        <ul className={classes.tabs__nav}>
+          <TabNavItem title="Kreveta" id="tab1" activeTab={activeTab} setActiveTab={setActiveTab} />
+          <TabNavItem
+            title="Ostala oprema"
+            id="tab2"
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+          />
+        </ul>
 
-      <div className="tabs__outlet">
-        <TabActivity id="tab1" activeTab={activeTab}>
-          <TabContent contentList={firstTabList} />
-        </TabActivity>
-        <TabActivity id="tab2" activeTab={activeTab}>
-          <TabContent contentList={secondTabList} />
-        </TabActivity>
-      </div>
+        <div className="tabs__outlet">
+          <TabActivity id="tab1" activeTab={activeTab}>
+            <TabContent contentList={firstTabList} />
+          </TabActivity>
+          <TabActivity id="tab2" activeTab={activeTab}>
+            <TabContent contentList={secondTabList} />
+          </TabActivity>
+        </div>
+      </Container>
     </section>
   );
 };

@@ -6,22 +6,12 @@
     position: relative;
     display: block;
     margin: 0 auto 20px auto;
-    font-size: 40px;
+    font-size: 36px;
     color: $main-color;
     font-weight: 700;
     text-transform: uppercase;
     &_noMarginBottom {
         margin-bottom: 0;
-    }
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        display: block;
-        width: 70px;
-        height: 2px;
-        background-color: $main-color;
     }
 }
 

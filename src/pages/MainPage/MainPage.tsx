@@ -6,12 +6,8 @@ import MainScreen from './sections/MainScreen/MainScreen';
 import NumericInfo from './sections/NumericInfo/NumericInfo';
 import VideoWithText from '../../components/VideoWithText/VideoWithText';
 import Health from './sections/Health/Health';
-import Ceramics from './sections/Ceramics/Ceramics';
+import Ceramics from '../../components/Ceramics/Ceramics';
 import Videos from './sections/Videos/Videos';
-// import ContactUs from '../../components/ContactUs/ContactUs';
-// import Tabs from '../../components/Tabs/Tabs';
-// import Advantages from './sections/Advantages/Advantages';
-// import Footer from '../../layouts/Footer/Footer';
 
 // import { sliderImagesList } from '../../data/data';
 

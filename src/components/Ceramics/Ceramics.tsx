@@ -1,10 +1,10 @@
-import Container from '../../../../components/UI/Container/Container';
-import Title from '../../../../components/UI/Title/Title';
+import Container from '../UI/Container/Container';
+import Title from '../UI/Title/Title';
 import CeramicsItem from './CeramicsItem/CeramicsItem';
 
 import classes from './Ceramics.module.scss';
 
-import { ceramicsList } from '../../../../data/data';
+import { ceramicsList } from '../../data/data';
 
 const Ceramics: React.FC = () => {
   return (
