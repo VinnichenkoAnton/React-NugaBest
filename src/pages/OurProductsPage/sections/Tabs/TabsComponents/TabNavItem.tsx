@@ -1,7 +1,4 @@
-import classNames from 'classnames';
 import Button from '../../../../../components/UI/Button/Button';
-
-import classes from '../Tabs.module.scss';
 
 const TabNavItem: React.FC<{
   id: string;
@@ -18,11 +15,7 @@ const TabNavItem: React.FC<{
       <Button
         onClick={handleClick}
         type="button"
-        className={classNames(
-          classes.tabs__btn,
-          activeTab === id && classes.tabs__btn_active,
-          activeTab !== id && classes.tabs__btn,
-        )}
+        buttonActivity={activeTab === id ? '' : 'inactive'}
       >
         {title}
       </Button>

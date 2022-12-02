@@ -1,12 +1,20 @@
+import classNames from 'classnames';
 import classes from './Button.module.scss';
 
-const Button: React.FC<{
-  children: React.ReactNode;
-  type?: 'button' | 'reset' | 'submit';
-  onClick?: () => void;
-  className?: string;
-}> = ({ children, type, onClick, className }) => {
-  const buttonClasses: string = `${classes.button} ${className}`;
+import { ButtonPropsTypes } from './ButtonTypes';
+
+const Button: React.FC<ButtonPropsTypes> = ({
+  className,
+  buttonActivity,
+  type,
+  onClick,
+  children,
+}) => {
+  const buttonClasses: string = classNames(
+    classes.button,
+    className,
+    classes[`button_${buttonActivity}`],
+  );
   return (
     <button className={buttonClasses} type={type || 'button'} onClick={onClick}>
       {children}

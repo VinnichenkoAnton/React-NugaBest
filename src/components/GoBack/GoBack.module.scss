@@ -1,7 +1,9 @@
+@import '../../styles/variables.module.scss';
+
 .goback {
     display: block;
     text-align: center;
-    color: #3f3689;
+    color: $main-color;
     font-weight: 400;
     font-size: 24px;
     margin-top: 30px;

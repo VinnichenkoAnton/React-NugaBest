@@ -10,6 +10,9 @@
     color: $main-color;
     font-weight: 700;
     text-transform: uppercase;
+    &_noMarginBottom {
+        margin-bottom: 0;
+    }
     &:after {
         content: '';
         position: absolute;

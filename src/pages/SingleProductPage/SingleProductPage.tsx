@@ -36,10 +36,11 @@ const SingleProductPage: React.FC = () => {
           <SingleProduct
             id={singleProduct.id}
             img={singleProduct.img}
+            gallery={singleProduct.gallery}
             title={singleProduct.title}
             subtitle={singleProduct.subtitle}
             description={singleProduct.description}
-            additional={singleProduct.additional}
+            additionalInfo={singleProduct.additionalInfo}
           />
         </>
       ) : null}

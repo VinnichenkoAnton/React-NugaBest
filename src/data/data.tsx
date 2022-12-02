@@ -12,20 +12,67 @@ import customers from '../resources/numericInfo/customers.svg';
 import prizes from '../resources/numericInfo/prizes.svg';
 
 // //firstTabList
+//N4
 import n4 from '../resources/tabs/beds/imgs/n4.png';
-import { textN4 } from '../resources/tabs/beds/texts';
+import n4_2 from '../resources/tabs/beds/n4/n4_2.jpg';
+import n4_3 from '../resources/tabs/beds/n4/n4_3.jpg';
+import n4_4 from '../resources/tabs/beds/n4/n4_4.jpg';
+import n4_5 from '../resources/tabs/beds/n4/n4_5.jpg';
+import { textN4 } from './tabs/texts';
+//N5
 import n5 from '../resources/tabs/beds/imgs/n5.jpg';
-import { textN5 } from '../resources/tabs/beds/texts';
+import n5_2 from '../resources/tabs/beds/n5/n5_2.jpg';
+import { textN5 } from './tabs/texts';
 
 // //secondTabList
+//T20
 import t20 from '../resources/tabs/otherEquipment/imgs/t20.jpg';
+import t20_2 from '../resources/tabs/otherEquipment/t20/t20_2.jpg';
+import { textT20 } from './tabs/texts';
+//T11P
 import t11p from '../resources/tabs/otherEquipment/imgs/t11p.jpg';
+import t11p_2 from '../resources/tabs/otherEquipment/t11p/t11p_2.jpg';
+import { textT11P } from './tabs/texts';
+//NM80
 import nm80 from '../resources/tabs/otherEquipment/imgs/nm80.jpg';
+import nm80_2 from '../resources/tabs/otherEquipment/nm80/nm80_2.jpg';
+import nm80_3 from '../resources/tabs/otherEquipment/nm80/nm80_3.png';
+import nm80_4 from '../resources/tabs/otherEquipment/nm80/nm80_4.png';
+import nm80_5 from '../resources/tabs/otherEquipment/nm80/nm80_5.png';
+import { textNM80 } from './tabs/texts';
+//NM90
 import nm90 from '../resources/tabs/otherEquipment/imgs/nm90.jpg';
+import nm90_2 from '../resources/tabs/otherEquipment/nm90/nm90_2.jpg';
+import nm90_3 from '../resources/tabs/otherEquipment/nm90/nm90_3.jpg';
+import nm90_4 from '../resources/tabs/otherEquipment/nm90/nm90_4.jpg';
+import nm90_5 from '../resources/tabs/otherEquipment/nm90/nm90_5.jpg';
+import nm90_6 from '../resources/tabs/otherEquipment/nm90/nm90_6.jpg';
+import { textNM90 } from './tabs/texts';
+//MHP100
 import mhp100 from '../resources/tabs/otherEquipment/imgs/mhp100.jpg';
+import mhp100_2 from '../resources/tabs/otherEquipment/mhp100/mhp100_2.png';
+import { textMHP100 } from './tabs/texts';
+//E5
 import e5 from '../resources/tabs/otherEquipment/imgs/e5.jpg';
+import e5_2 from '../resources/tabs/otherEquipment/e5/e5_2.png';
+import e5_3 from '../resources/tabs/otherEquipment/e5/e5_3.png';
+import e5_4 from '../resources/tabs/otherEquipment/e5/e5_4.png';
+import e5_5 from '../resources/tabs/otherEquipment/e5/e5_5.jpg';
+import { textE5 } from './tabs/texts';
+//E3
 import e3 from '../resources/tabs/otherEquipment/imgs/e3.jpg';
+import e3_2 from '../resources/tabs/otherEquipment/e3/e3_2.jpg';
+import e3_3 from '../resources/tabs/otherEquipment/e3/e3_3.jpg';
+import e3_4 from '../resources/tabs/otherEquipment/e3/e3_4.jpg';
+import e3_5 from '../resources/tabs/otherEquipment/e3/e3_5.jpg';
+import { textE3 } from './tabs/texts';
+//NM200
 import nm200 from '../resources/tabs/otherEquipment/imgs/nm200.jpg';
+import nm200_2 from '../resources/tabs/otherEquipment/nm200/nm200_2.jpg';
+import nm200_3 from '../resources/tabs/otherEquipment/nm200/nm200_3.jpg';
+import nm200_4 from '../resources/tabs/otherEquipment/nm200/nm200_4.jpg';
+import nm200_5 from '../resources/tabs/otherEquipment/nm200/nm200_5.jpg';
+import { textNM200 } from './tabs/texts';
 
 // //ceramicslList
 import ceramics1 from '../resources/ceramics/ceramics1.png';
@@ -79,28 +126,31 @@ export interface TabListTypes {
   id: string;
   title: string;
   img: string;
+  gallery?: string[];
   subtitle?: string;
   description: string;
-  additional?: JSX.Element;
+  additionalInfo?: JSX.Element;
 }
 export const firstTabList: TabListTypes[] = [
   {
     id: 'ft1',
     title: 'N4',
     img: n4,
+    gallery: [n4, n4_2, n4_3, n4_4, n4_5],
     subtitle: 'MASAŽA UZ UDOBU',
     description:
       'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
-    additional: textN4,
+    additionalInfo: textN4,
   },
   {
     id: 'ft2',
     title: 'N5',
     img: n5,
-    subtitle: 'MASAŽA UZ UDOBU',
+    gallery: [n5, n5_2],
+    subtitle: 'SKLOPIVI KOMBINIRANI TOPLINSKI STIMULATOR ZA MASAŽUSKU',
     description:
-      'Безкоштовна установка. Базовий комплект бездротового обладнання. Цілодобовий моніторинг за об’єктом технічними засобами охорони. Виїзд групи швидкого реагування на сигнал тривоги',
-    additional: textN5,
+      'N5 SKLOPIVI KOMBINIRANI TOPLINSKI STIMULATOR pruža ugodnu toplinsku masažu simultanim kretanjem automatiziranih projektora od turmanijeve keramike.',
+    additionalInfo: textN5,
   },
 ];
 
@@ -109,73 +159,73 @@ export const secondTabList: TabListTypes[] = [
     id: 'st1',
     title: 'T20 Turmanijev tepih (prostirka za krevet)',
     img: t20,
-    subtitle: 'MASAŽA UZ UDOBU',
+    gallery: [t20, t20_2],
     description:
-      'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
-    additional: textN4,
+      'Smanjite bolove u mišićima i stres, postanite opušteniji, bolje spavajte noću, postanite energičniji i opušteniji tijekom dana. Sve to i još mnoge druge dobrobiti za Vaše zdravlje postići ćete svakodnevnim korištenjem turmanijevih prostirki. Turmanijeve prostirke sastoje se od podloge na koju su ugrađeni diskovi od turmanijeve keramike. Redovitim korištenjem regulira se metabolizam, potiče se detoksikacija tijela, balans tjelesnih tekućina, kao i regulacija tjelesne težine. Može se koristiti i kao infracrvena sauna.',
+    additionalInfo: textT20,
   },
   {
     id: 'st2',
     title: 'T11P Turmanijev tepih s dodatkom nanodijamantne keramike',
     img: t11p,
-    subtitle: 'MASAŽA UZ UDOBU',
+    gallery: [t11p, t11p_2],
     description:
-      'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
-    additional: textN4,
+      'Turmanijev tepih s dodatkom nanodijamantne turmanijeve keramike ima poboljšana svojstva. Poseban dizajn grijača omogućuje savitljiost i mobilnost kao i prilagodbu različitim namjenama. Grijači element je karbonska tkanina koja je fleksibilna i nezapaljiva',
+    additionalInfo: textT11P,
   },
   {
     id: 'st3',
     title: 'NM-80H',
     img: nm80,
-    subtitle: 'MASAŽA UZ UDOBU',
+    gallery: [nm80, nm80_2, nm80_3, nm80_4, nm80_5],
     description:
-      'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
-    additional: textN4,
+      'Učinak turmanijevih tepiha na poboljšanje zdravlja odnosno poboljšanje cirkulacije krvi, imuniteta i skladnog rada živčanog sustava temelji se na djelovanju infracrvene topline, ionizacije i magnetoterapije koju emitira turmanijeva keramika. Učinak se zasniva na principima orijentalnih tretmana akupresure i moksa terapije. Namijenjena je tretiranju cijelog tijela, poticanju cirkulacije, opuštanju mišićnog grča, smirivanju svih vrsta bolova (u leđima, kod artritisa, fibromijalgije, migrene, menstrualnih bolova), problema sa spavanjem, a može se koristiti i za prevenciju, te kao čisti wellness i opuštanje.',
+    additionalInfo: textNM80,
   },
   {
     id: 'st4',
     title: 'NM-90 Turmanijski pojas',
     img: nm90,
-    subtitle: 'MASAŽA UZ UDOBU',
+    gallery: [nm90, nm90_2, nm90_3, nm90_4, nm90_5, nm90_6],
     description:
-      'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
-    additional: textN4,
+      '70 posto uredskih radnika do 40. godine života pokazuje prve simptome išijasa! Do dobi od 50 godina to postaje bolest koja vas sprječava da živite punim životom. Turmanijski pojas NM-90 pomoći će vam u brizi o zdravlju vaših leđa.',
+    additionalInfo: textNM90,
   },
   {
     id: 'st5',
     title: 'Turmanijev prsluk MHP-100',
     img: mhp100,
-    subtitle: 'MASAŽA UZ UDOBU',
+    gallery: [mhp100, mhp100_2],
     description:
-      'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
-    additional: textN4,
+      'Turmanijev prsluk pomaže u očuvanju zdravlja, normalne funkcije i vitalnosti dišnog sustava. Sastoji se od čvrste, savitljive, baršunaste podloge i eko kože na koju su pričvršćeni diskovi od turmanjeve keramike. Namijenjen je poboljšanju funkcija dišnog i kardiovaskularnog sustava.',
+    additionalInfo: textMHP100,
   },
   {
     id: 'st6',
     title: 'E5 Masažer za stopala',
     img: e5,
-    subtitle: 'MASAŽA UZ UDOBU',
+    gallery: [e5, e5_2, e5_3, e5_4, e5_5],
     description:
-      'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
-    additional: textN4,
+      'Masažer za stopala E5 je inovativni proizvod u kojem se uspjejšno kombiniraju akupresura, infracrvena toplinai miostimulacija. Proizvod je izrađen na bazi turmanijeve keramike i najnovijeg razvoja Nuga Besta – nanodijamantnog turmanija, koji imaju jedinstvena ljekovita svojstva. Masažer E-5 je koristan za osobe koje moraju puno vremena provoditi na nogama ili imaju sjedilački posao.',
+    additionalInfo: textE5,
   },
   {
     id: 'st7',
     title: 'E3 Turmanijev pojas miostimulator',
     img: e3,
-    subtitle: 'MASAŽA UZ UDOBU',
+    gallery: [e3, e3_2, e3_3, e3_4, e3_5],
     description:
-      'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
-    additional: textN4,
+      'Nedostatak vremena za tjelovježbu i brigu o zdravlju i vitkosti Vašeg tijela uspješno ćete riješiti uporabom turmanijevog pojasa miostimulatora E3. E3 je multifunkcionalna oprema čije se djelovanje temelji na učincima turmanijeve keramike i niskofrekventne struje.',
+    additionalInfo: textE3,
   },
   {
     id: 'st8',
     title: 'NM-200 tourmanium projektor',
     img: nm200,
-    subtitle: 'MASAŽA UZ UDOBU',
+    gallery: [nm200, nm200_2, nm200_3, nm200_4, nm200_5],
     description:
-      'Oprema N4 ima prekrasan moderan dizajn, besprijekornu kvalitetu i mnoge funkcije koje poboljšavaju zdravlje. Zahvaljujući preklopnom dizajnu, postalo je moguće prilagoditi duljinu masažera visini određene osobe. Tako će korištenje opreme biti ugodno za sve članove obitelji.',
-    additional: textN4,
+      'Gdje se može nabaviti takav lijek koji je uvijek pri ruci i spas u slučaju iznenadne muke? Postoji takav alat! Ovo je kompaktni tourmanium projektor NM-200.',
+    additionalInfo: textNM200,
   },
 ];
 

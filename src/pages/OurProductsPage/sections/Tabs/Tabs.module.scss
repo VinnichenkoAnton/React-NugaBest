@@ -71,18 +71,7 @@
         font-size: 18px;
         color: $white-color;
     }
-    &__btn {
-        width: 238px;
-        background-color: transparent;
-        box-shadow: 0px 0px 5px $main-color;
-        color: $black-color;
-        &_active {
-            width: 238px;
-            background: $main-color;
-            box-shadow: 0px 0px 5px $main-color;
-            color: $white-color;
-        }
-    }
+    
 }
 
 @media (max-width: 991px) {

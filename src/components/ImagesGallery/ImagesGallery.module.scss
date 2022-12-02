@@ -1,0 +1,14 @@
+.gallery {
+    &__img {
+        height: 100px;
+    }
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+    height: calc(100vh - 80px);
+}
+
+.image-gallery-slide .image-gallery-image {
+    width: 100%;
+    object-fit: cover;
+}
