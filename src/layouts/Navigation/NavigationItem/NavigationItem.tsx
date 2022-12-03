@@ -2,7 +2,9 @@ import { NavLink } from 'react-router-dom';
 import classNames from 'classnames';
 import classes from './NavigationItem.module.scss';
 
-const NavigationItem: React.FC<{ text: string; to: string }> = ({ text, to }) => {
+import { NavigationItemProps } from './NavigationItem.type';
+
+const NavigationItem: React.FC<NavigationItemProps> = ({ text, to }) => {
   return (
     <li className={classes.navitem}>
       <NavLink

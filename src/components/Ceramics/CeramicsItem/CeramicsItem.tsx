@@ -1,6 +1,6 @@
 import classes from './CeramicsItem.module.scss';
 
-import { CeramicsListTypes } from '../../../data/data';
+import { CeramicsListTypes } from '../../../data/data.types';
 
 const CeramicsItem: React.FC<CeramicsListTypes> = ({ icn, title, description }) => {
   return (

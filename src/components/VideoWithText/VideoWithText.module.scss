@@ -84,6 +84,15 @@
     }
 }
 
+@media (max-width: 767px) {
+    /* 576 */
+    .product {
+        &__description {
+            font-size: 20px;
+        }
+    }
+}
+
 @media (max-width: 575px) {
     /* 320 */
     .product {

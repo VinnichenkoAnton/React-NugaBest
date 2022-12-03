@@ -1,39 +1,108 @@
 @import '../../../../styles/variables.module.scss';
+
 .mainscreen {
     position: relative;
     height: 90vh;
     width: 100%;
     min-height: 700px;
     padding-top: 60px;
-    padding-left: 60px;
     &__background {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: -1;
-         img {
+        z-index: -11;
+        img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-         }
+        }
+        
     }
     &__title {
-        font-size: 80px;
         color: $white-color;
+        font-size: 80px;
         font-weight: 700;
+        padding: 50px 0 0 100px;
+        position: relative;
+        &:before {
+            content: '';
+            background:  url("../../../../resources/mainScreen/mainScreenElement.png") center center/cover no-repeat;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 250px;
+            height: 250px;
+            z-index: -1;
+        }
     }
     &__subtitle {
-        font-size: 40px;
         color: $white-color;
+        font-size: 40px;
         font-weight: 700;
+        margin-left: 100px;
+        z-index: 1;
     }
     &__description {
-        margin-top: 20px;
-        font-size: 20px;
         color: $white-color;
+        font-size: 20px;
         font-weight: 700;
+        margin-left: 100px;
+        margin-top: 20px;
         max-width: 470px;
+        z-index: 11;
+    }
+}
+@media (max-width: 1199px) {
+    /* 992 */
+    .mainscreen {
+        height: unset;
+        min-height: 500px;
+    }
+}
+@media (max-width: 991px) {
+    /* 768 */
+    .mainscreen {
+        &__title {
+            padding-top: 0;
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    /* 576 */
+    .mainscreen {
+        min-height: 400px;
+        &__title {
+            padding-left: 0;
+            font-size: 50px;
+        }
+        &__subtitle {
+            margin-left: 0;
+            font-size: 34px;
+        }
+        &__description {
+            margin-left: 0;
+        } 
+    }
+}
+
+@media (max-width: 575px) {
+    /* 320 */
+    .mainscreen {
+        padding-top: 15px;
+        min-height: 355px;
+        &__title {
+            font-size: 34px;
+        }
+        &__subtitle {
+            font-size: 28px;
+        }
+        &__description {
+            font-size: 20px;
+        } 
     }
 }

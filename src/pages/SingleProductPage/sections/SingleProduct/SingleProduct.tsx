@@ -4,7 +4,8 @@ import ImagesGallery from '../../../../components/ImagesGallery/ImagesGallery';
 
 import classes from './SingleProduct.module.scss';
 
-import { TabListTypes } from '../../../../data/data';
+import { TabListTypes } from '../../../../types/GlobalTypes';
+import { ImagesTypes } from './SingleProduct.types';
 
 const SingleProduct: React.FC<TabListTypes> = ({
   gallery,
@@ -13,12 +14,7 @@ const SingleProduct: React.FC<TabListTypes> = ({
   description,
   additionalInfo,
 }) => {
-  const images:
-    | {
-        original: string;
-        thumbnail: string;
-      }[]
-    | undefined = gallery?.map((item) => {
+  const images: ImagesTypes = gallery.map((item) => {
     return {
       original: item,
       thumbnail: item,

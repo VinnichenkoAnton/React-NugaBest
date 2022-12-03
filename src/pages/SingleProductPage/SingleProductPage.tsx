@@ -6,8 +6,9 @@ import Header from '../../layouts/Header/Header';
 import GoBack from '../../components/GoBack/GoBack';
 import SingleProduct from './sections/SingleProduct/SingleProduct';
 
-import { firstTabList, TabListTypes } from '../../data/data';
-import { secondTabList } from '../../data/data';
+import { firstTabList, secondTabList } from '../../data/data';
+
+import { TabListTypes } from '../../types/GlobalTypes';
 
 const SingleProductPage: React.FC = () => {
   const [singleProduct, setSingleProduct] = useState<TabListTypes | null>(null);

@@ -1,10 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
 
-//sliderImagesList
-import sliderImage1 from '../resources/slider/imgs/img1.jpg';
-import sliderImage2 from '../resources/slider/imgs/img2.jpg';
-import sliderImage3 from '../resources/slider/imgs/img3.jpg';
-
 //numericInfoList
 import established from '../resources/numericInfo/established.svg';
 import workers from '../resources/numericInfo/workers.svg';
@@ -74,16 +69,20 @@ import nm200_4 from '../resources/tabs/otherEquipment/nm200/nm200_4.jpg';
 import nm200_5 from '../resources/tabs/otherEquipment/nm200/nm200_5.jpg';
 import { textNM200 } from './tabs/texts';
 
-// //ceramicslList
+//ceramicslList
 import ceramics1 from '../resources/ceramics/ceramics1.png';
 import ceramics2 from '../resources/ceramics/ceramics2.png';
 import ceramics3 from '../resources/ceramics/ceramics3.png';
 import ceramics4 from '../resources/ceramics/ceramics4.png';
 
-interface NavigationListTypes {
-  text: string;
-  to: string;
-}
+//Types
+import { TabListTypes } from '../types/GlobalTypes';
+import { NavigationListTypes } from './data.types';
+import { NumericListTypes } from './data.types';
+import { CeramicsListTypes } from './data.types';
+import { VideosListTypes } from './data.types';
+import { ContactsListTypes } from './data.types';
+
 export const navigationList: NavigationListTypes[] = [
   {
     text: 'O NAMA',
@@ -99,22 +98,6 @@ export const navigationList: NavigationListTypes[] = [
   },
 ];
 
-export interface SliderImagesListTypes {
-  img: string;
-  alt: string;
-}
-export const sliderImagesList: SliderImagesListTypes[] = [
-  { img: sliderImage1, alt: 'NugaBest photo 1' },
-  { img: sliderImage2, alt: 'NugaBest photo 2' },
-  { img: sliderImage3, alt: 'NugaBest photo 3' },
-];
-
-interface NumericListTypes {
-  id: string;
-  img: string;
-  title: string;
-  amount: number;
-}
 export const numericInfoList: NumericListTypes[] = [
   { id: uuidv4(), img: established, title: 'Godine', amount: 10 },
   { id: uuidv4(), img: workers, title: 'Zaposlenici', amount: 100 },
@@ -122,15 +105,6 @@ export const numericInfoList: NumericListTypes[] = [
   { id: uuidv4(), img: prizes, title: 'Predmeti', amount: 50 },
 ];
 
-export interface TabListTypes {
-  id: string;
-  title: string;
-  img: string;
-  gallery?: string[];
-  subtitle?: string;
-  description: string;
-  additionalInfo?: JSX.Element;
-}
 export const firstTabList: TabListTypes[] = [
   {
     id: 'ft1',
@@ -229,12 +203,6 @@ export const secondTabList: TabListTypes[] = [
   },
 ];
 
-export interface CeramicsListTypes {
-  id?: string;
-  title: string;
-  description: string[];
-  icn: string;
-}
 export const ceramicsList: CeramicsListTypes[] = [
   {
     id: uuidv4(),
@@ -281,11 +249,6 @@ export const ceramicsList: CeramicsListTypes[] = [
   },
 ];
 
-export interface VideosListTypes {
-  id: string;
-  title: string;
-  video: string;
-}
 export const videosList: VideosListTypes[] = [
   {
     id: uuidv4(),
@@ -320,13 +283,6 @@ export const videosList: VideosListTypes[] = [
   },
 ];
 
-export interface ContactsListTypes {
-  id: string;
-  address: string;
-  phone: string;
-  email: string;
-  map: string;
-}
 export const contactsList: ContactsListTypes[] = [
   {
     id: uuidv4(),
