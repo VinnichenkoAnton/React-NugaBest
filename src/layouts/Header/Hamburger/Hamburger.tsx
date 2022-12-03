@@ -2,8 +2,11 @@ import classes from './Hamburger.module.scss';
 
 import classNames from 'classnames';
 
-const Hamburger: React.FC<{ isActive: boolean; onClick: () => void }> = ({ isActive, onClick }) => {
-  const hamburgerClasses = classNames(
+import { ConcatinatedClassesType } from '../../../types/GlobalTypes';
+import { HamburgerPropsTypes } from './Hamburger.type';
+
+const Hamburger: React.FC<HamburgerPropsTypes> = ({ isActive, onClick }) => {
+  const hamburgerClasses: ConcatinatedClassesType = classNames(
     classes.hamburger__span,
     isActive ? classes.hamburger__span_active : '',
   );

@@ -3,11 +3,8 @@ import Title from '../UI/Title/Title';
 
 import classes from './VideoWithText.module.scss';
 
-interface VideoWithTextPropsTypes {
-  video: string;
-  title: string;
-  description: string;
-}
+import { VideoWithTextPropsTypes } from './VideoWithText.type';
+
 const VideoWithText: React.FC<VideoWithTextPropsTypes> = ({ video, title, description }) => {
   return (
     <section className={classes.product}>

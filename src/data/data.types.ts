@@ -10,13 +10,6 @@ export interface NumericListTypes {
   amount: number;
 }
 
-export interface CeramicsListTypes {
-  id?: string;
-  title: string;
-  description: string[];
-  icn: string;
-}
-
 export interface VideosListTypes {
   id: string;
   title: string;

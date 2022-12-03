@@ -1,7 +1,8 @@
 import classNames from 'classnames';
 import classes from './Button.module.scss';
 
-import { ButtonPropsTypes } from './ButtonTypes';
+import { ConcatinatedClassesType } from '../../../types/GlobalTypes';
+import { ButtonPropsTypes } from './Button.type';
 
 const Button: React.FC<ButtonPropsTypes> = ({
   className,
@@ -10,7 +11,7 @@ const Button: React.FC<ButtonPropsTypes> = ({
   onClick,
   children,
 }) => {
-  const buttonClasses: string = classNames(
+  const buttonClasses: ConcatinatedClassesType = classNames(
     classes.button,
     className,
     classes[`button_${buttonActivity}`],

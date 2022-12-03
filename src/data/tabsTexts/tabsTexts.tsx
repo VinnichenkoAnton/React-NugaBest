@@ -1,10 +1,10 @@
 import classNames from 'classnames';
 
-import classes from './texts.module.scss';
+import classes from './tabsTexts.module.scss';
 
-type texts = JSX.Element;
+import { TabsTextsType } from './tabsTexts.type';
 
-export const textN4: texts = (
+export const textN4: TabsTextsType = (
   <>
     <ul className={classes.texts__list}>
       N4 je dnevni zdravstveni pregled:
@@ -24,7 +24,7 @@ export const textN4: texts = (
   </>
 );
 
-export const textN5: texts = (
+export const textN5: TabsTextsType = (
   <>
     <div className={classNames(classes.texts__item, classes.texts__item_normal)}>
       Osim toplinske masaže, ovaj uređaj također omogućuje akupresurno djelovanje na biološki
@@ -70,7 +70,7 @@ export const textN5: texts = (
   </>
 );
 
-export const textT20: texts = (
+export const textT20: TabsTextsType = (
   <ul className={classes.texts__list}>
     Posebno se preporučuje korištenje tijekom cijele noći, pri čemu se pridonosi:
     <li>uspostavljanju boljeg i kvalitetnijeg sna</li>
@@ -81,7 +81,7 @@ export const textT20: texts = (
   </ul>
 );
 
-export const textT11P: texts = (
+export const textT11P: TabsTextsType = (
   <>
     <ul className={classes.texts__list}>
       Nanodijamantna keramika daje:
@@ -98,7 +98,7 @@ export const textT11P: texts = (
   </>
 );
 
-export const textNM80: texts = (
+export const textNM80: TabsTextsType = (
   <ul className={classes.texts__list}>
     Također je dokazano da spavanje na turmanijevoj keramici:
     <li>utječe na fluidnost i kvalitativni sastav krvi</li>
@@ -106,7 +106,7 @@ export const textNM80: texts = (
   </ul>
 );
 
-export const textNM90: texts = (
+export const textNM90: TabsTextsType = (
   <>
     <div className={classNames(classes.texts__item, classes.texts__item_normal)}>
       Pojas se koristi kod bolova u leđima i zglobova. Zagrijavanje infracrvenom toplinom turmanija
@@ -124,7 +124,7 @@ export const textNM90: texts = (
   </>
 );
 
-export const textMHP100: texts = (
+export const textMHP100: TabsTextsType = (
   <>
     <ul className={classes.texts__list}>
       Zbog utjecaja ionizacije i dubokog prodiranja infracrvene topline u tijelo (3-7cm) posebno se
@@ -153,7 +153,7 @@ export const textMHP100: texts = (
   </>
 );
 
-export const textE5: texts = (
+export const textE5: TabsTextsType = (
   <>
     <ul className={classes.texts__list}>
       Učinci primjene:
@@ -169,7 +169,7 @@ export const textE5: texts = (
   </>
 );
 
-export const textE3: texts = (
+export const textE3: TabsTextsType = (
   <>
     <div className={classNames(classes.texts__item, classes.texts__item_normal)}>
       Niskofrekventne elekrode djeluju stimulirajuće na rad živčanog i mišićnog sustava, na
@@ -211,7 +211,7 @@ export const textE3: texts = (
   </>
 );
 
-export const textNM200: texts = (
+export const textNM200: TabsTextsType = (
   <>
     <div className={classNames(classes.texts__item, classes.texts__item_normal)}>
       Naći će mjesto ne samo u stanu, već čak i u ženskoj torbici! Zbog male težine i jedinstvenih

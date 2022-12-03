@@ -24,16 +24,16 @@
         color: $white-color;
         font-size: 80px;
         font-weight: 700;
-        padding: 50px 0 0 100px;
+        padding: 50px 0 0 180px;
         position: relative;
         &:before {
             content: '';
             background:  url("../../../../resources/mainScreen/mainScreenElement.png") center center/cover no-repeat;
             position: absolute;
-            top: 20px;
+            top: 0px;
             left: 0;
-            width: 250px;
-            height: 250px;
+            width: 450px;
+            height: 450px;
             z-index: -1;
         }
     }
@@ -41,14 +41,14 @@
         color: $white-color;
         font-size: 40px;
         font-weight: 700;
-        margin-left: 100px;
+        margin-left: 180px;
         z-index: 1;
     }
     &__description {
         color: $white-color;
         font-size: 20px;
         font-weight: 700;
-        margin-left: 100px;
+        margin-left: 180px;
         margin-top: 20px;
         max-width: 470px;
         z-index: 11;
@@ -58,17 +58,21 @@
     /* 992 */
     .mainscreen {
         height: unset;
-        min-height: 500px;
+        min-height: 550px;
     }
 }
 @media (max-width: 991px) {
     /* 768 */
     .mainscreen {
         &__title {
+            padding-left: 100px;
             padding-top: 0;
             &:before {
                 display: none;
             }
+        }
+        &__subtitle, &__description {
+            margin-left: 100px;
         }
     }
 }

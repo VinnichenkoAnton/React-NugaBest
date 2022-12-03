@@ -1,12 +1,9 @@
 import classes from './ContactLink.module.scss';
 
-const ContactLink: React.FC<{
-  href: string;
-  Icn: React.FC<React.SVGProps<SVGSVGElement>>;
-  text: string;
-  className: string;
-}> = ({ href, Icn, text, className }) => {
-  const contactLinkClasses = `${classes.contact} ${className}`;
+import { ConcatinatedClassesType } from '../../types/GlobalTypes';
+import { ContactLinkPropsTypes } from './ContactLink.type';
+const ContactLink: React.FC<ContactLinkPropsTypes> = ({ href, Icn, text, className }) => {
+  const contactLinkClasses: ConcatinatedClassesType = `${classes.contact} ${className}`;
   return (
     <a href={href} className={contactLinkClasses}>
       <Icn className={classes.contact__icn} />

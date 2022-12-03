@@ -1,12 +1,11 @@
 import classNames from 'classnames';
 import classes from './Title.module.scss';
 
-const Title: React.FC<{ className?: string; text: string; marginBottom?: string }> = ({
-  className,
-  text,
-  marginBottom,
-}) => {
-  const titleClasses: string = classNames(
+import { ConcatinatedClassesType } from '../../../types/GlobalTypes';
+import { TitlePropsTypes } from './Title.type';
+
+const Title: React.FC<TitlePropsTypes> = ({ className, text, marginBottom }) => {
+  const titleClasses: ConcatinatedClassesType = classNames(
     classes.title,
     className,
     classes[`title_${marginBottom}`],

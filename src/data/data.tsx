@@ -13,28 +13,28 @@ import n4_2 from '../resources/tabs/beds/n4/n4_2.jpg';
 import n4_3 from '../resources/tabs/beds/n4/n4_3.jpg';
 import n4_4 from '../resources/tabs/beds/n4/n4_4.jpg';
 import n4_5 from '../resources/tabs/beds/n4/n4_5.jpg';
-import { textN4 } from './tabs/texts';
+import { textN4 } from './tabsTexts/tabsTexts';
 //N5
 import n5 from '../resources/tabs/beds/imgs/n5.jpg';
 import n5_2 from '../resources/tabs/beds/n5/n5_2.jpg';
-import { textN5 } from './tabs/texts';
+import { textN5 } from './tabsTexts/tabsTexts';
 
 // //secondTabList
 //T20
 import t20 from '../resources/tabs/otherEquipment/imgs/t20.jpg';
 import t20_2 from '../resources/tabs/otherEquipment/t20/t20_2.jpg';
-import { textT20 } from './tabs/texts';
+import { textT20 } from './tabsTexts/tabsTexts';
 //T11P
 import t11p from '../resources/tabs/otherEquipment/imgs/t11p.jpg';
 import t11p_2 from '../resources/tabs/otherEquipment/t11p/t11p_2.jpg';
-import { textT11P } from './tabs/texts';
+import { textT11P } from './tabsTexts/tabsTexts';
 //NM80
 import nm80 from '../resources/tabs/otherEquipment/imgs/nm80.jpg';
 import nm80_2 from '../resources/tabs/otherEquipment/nm80/nm80_2.jpg';
 import nm80_3 from '../resources/tabs/otherEquipment/nm80/nm80_3.jpg';
 import nm80_4 from '../resources/tabs/otherEquipment/nm80/nm80_4.jpg';
 import nm80_5 from '../resources/tabs/otherEquipment/nm80/nm80_5.jpg';
-import { textNM80 } from './tabs/texts';
+import { textNM80 } from './tabsTexts/tabsTexts';
 //NM90
 import nm90 from '../resources/tabs/otherEquipment/imgs/nm90.jpg';
 import nm90_2 from '../resources/tabs/otherEquipment/nm90/nm90_2.jpg';
@@ -42,32 +42,32 @@ import nm90_3 from '../resources/tabs/otherEquipment/nm90/nm90_3.jpg';
 import nm90_4 from '../resources/tabs/otherEquipment/nm90/nm90_4.jpg';
 import nm90_5 from '../resources/tabs/otherEquipment/nm90/nm90_5.jpg';
 import nm90_6 from '../resources/tabs/otherEquipment/nm90/nm90_6.jpg';
-import { textNM90 } from './tabs/texts';
+import { textNM90 } from './tabsTexts/tabsTexts';
 //MHP100
 import mhp100 from '../resources/tabs/otherEquipment/imgs/mhp100.jpg';
 import mhp100_2 from '../resources/tabs/otherEquipment/mhp100/mhp100_2.jpg';
-import { textMHP100 } from './tabs/texts';
+import { textMHP100 } from './tabsTexts/tabsTexts';
 //E5
 import e5 from '../resources/tabs/otherEquipment/imgs/e5.jpg';
 import e5_2 from '../resources/tabs/otherEquipment/e5/e5_2.jpg';
 import e5_3 from '../resources/tabs/otherEquipment/e5/e5_3.jpg';
 import e5_4 from '../resources/tabs/otherEquipment/e5/e5_4.jpg';
 import e5_5 from '../resources/tabs/otherEquipment/e5/e5_5.jpg';
-import { textE5 } from './tabs/texts';
+import { textE5 } from './tabsTexts/tabsTexts';
 //E3
 import e3 from '../resources/tabs/otherEquipment/imgs/e3.jpg';
 import e3_2 from '../resources/tabs/otherEquipment/e3/e3_2.jpg';
 import e3_3 from '../resources/tabs/otherEquipment/e3/e3_3.jpg';
 import e3_4 from '../resources/tabs/otherEquipment/e3/e3_4.jpg';
 import e3_5 from '../resources/tabs/otherEquipment/e3/e3_5.jpg';
-import { textE3 } from './tabs/texts';
+import { textE3 } from './tabsTexts/tabsTexts';
 //NM200
 import nm200 from '../resources/tabs/otherEquipment/imgs/nm200.jpg';
 import nm200_2 from '../resources/tabs/otherEquipment/nm200/nm200_2.jpg';
 import nm200_3 from '../resources/tabs/otherEquipment/nm200/nm200_3.jpg';
 import nm200_4 from '../resources/tabs/otherEquipment/nm200/nm200_4.jpg';
 import nm200_5 from '../resources/tabs/otherEquipment/nm200/nm200_5.jpg';
-import { textNM200 } from './tabs/texts';
+import { textNM200 } from './tabsTexts/tabsTexts';
 
 //ceramicslList
 import ceramics1 from '../resources/ceramics/ceramics1.png';
@@ -76,10 +76,10 @@ import ceramics3 from '../resources/ceramics/ceramics3.png';
 import ceramics4 from '../resources/ceramics/ceramics4.png';
 
 //Types
+import { CeramicsListTypes } from '../types/GlobalTypes';
 import { TabListTypes } from '../types/GlobalTypes';
 import { NavigationListTypes } from './data.types';
 import { NumericListTypes } from './data.types';
-import { CeramicsListTypes } from './data.types';
 import { VideosListTypes } from './data.types';
 import { ContactsListTypes } from './data.types';
 

@@ -1,6 +1,6 @@
 import classes from './Spinner.module.scss';
 
-const Spinner = () => {
+const Spinner: React.FC = () => {
   return (
     <div>
       <svg role="img" aria-label="Spinner" className={classes.spinner} viewBox="0 0 50 50">
