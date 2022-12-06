@@ -1,4 +1,4 @@
-// import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -27,13 +27,13 @@ const SingleProductPage: React.FC = () => {
 
       {singleProduct ? (
         <>
-          {/* <Helmet>
+          <Helmet>
             <meta
               name="description"
-              content={`На цій сторінці ви можете більше дізнатися про нашу послугу ${singleProduct.title}`}
+              content={`Na ovoj stranici možete saznati više o proizvodu ${singleProduct.title}`}
             />
-            <title>{`Оберіг - ${singleProduct.title}`}</title>
-          </Helmet> */}
+            <title>{`Nuga Best Croatia - ${singleProduct.title}`}</title>
+          </Helmet>
           <SingleProduct
             id={singleProduct.id}
             img={singleProduct.img}

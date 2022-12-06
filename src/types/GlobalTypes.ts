@@ -1,5 +1,7 @@
 export type ConcatinatedClassesType = string;
 
+export type MappedArrayType = JSX.Element[];
+
 export type ClickHandlerType = () => void;
 
 export interface CeramicsListTypes {
@@ -18,3 +20,8 @@ export interface TabListTypes {
   description: string;
   additionalInfo?: JSX.Element;
 }
+
+export type ImagesGalleryTypes = {
+  original: string;
+  thumbnail: string;
+}[];

@@ -10,10 +10,9 @@ import classes from './Header.module.scss';
 import logo from '../../resources/header/logo.png';
 
 import { ClickHandlerType } from '../../types/GlobalTypes';
-import { NavigationIsVisibleType } from './Header.type';
 
 const Header: React.FC = () => {
-  const [navigationIsVisible, setNavigatioinIsVisible] = useState<NavigationIsVisibleType>(false);
+  const [navigationIsVisible, setNavigatioinIsVisible] = useState<boolean>(false);
   const clickHandler: ClickHandlerType = () => {
     setNavigatioinIsVisible((prevState) => !prevState);
   };

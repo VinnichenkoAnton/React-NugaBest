@@ -1,4 +1,4 @@
-// import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 import Header from '../../layouts/Header/Header';
 import ContactsInfo from './sections/ContactsInfo/ContactsInfo';
@@ -6,13 +6,13 @@ import ContactsInfo from './sections/ContactsInfo/ContactsInfo';
 const ContactsPage: React.FC = () => {
   return (
     <>
-      {/* <Helmet>
+      <Helmet>
         <meta
           name="description"
-          content="Сторінка контактів сайту компанії Оберіг. Оберіг - охоронная компанія для фізичних осіб та організацій в с.Гатне"
+          content="Kontakt stranica web stranice Nuga Best Croatia. Nuga Best Croatia je ovlašteni distributer ekskluzivnih medicinskih proizvoda Nuga Best"
         />
-        <title>Оберіг</title>
-      </Helmet> */}
+        <title>Nuga Best Croatia</title>
+      </Helmet>
       <Header />
       <ContactsInfo />
     </>

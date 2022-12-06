@@ -1,12 +1,10 @@
 import Button from '../../../../../components/UI/Button/Button';
 
-const TabNavItem: React.FC<{
-  id: string;
-  title: string;
-  activeTab: string;
-  setActiveTab: (id: string) => void;
-}> = ({ id, title, activeTab, setActiveTab }) => {
-  const handleClick: () => void = () => {
+import { ClickHandlerType } from '../../../../../types/GlobalTypes';
+import { TabNavItemPropsTypes } from '../Tabs.types';
+
+const TabNavItem: React.FC<TabNavItemPropsTypes> = ({ id, title, activeTab, setActiveTab }) => {
+  const handleClick: ClickHandlerType = () => {
     setActiveTab(id);
   };
 

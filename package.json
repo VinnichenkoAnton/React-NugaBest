@@ -14,6 +14,7 @@
     "classnames": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-image-gallery": "^1.2.11",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
@@ -46,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-helmet": "^6.1.6",
     "@types/uuid": "^8.3.4",
     "sass": "^1.56.1"
   }

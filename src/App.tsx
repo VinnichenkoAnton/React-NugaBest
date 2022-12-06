@@ -5,11 +5,15 @@ import { BrowserRouter as Router, Navigate, Route, Routes, useLocation } from 'r
 import Spinner from './components/Spinner/Spinner';
 import './App.scss';
 
-const MainPage = lazy(() => import('./pages/MainPage/MainPage'));
-const OurProductsPage = lazy(() => import('./pages/OurProductsPage/OurProductsPage'));
-const SingleProductPage = lazy(() => import('./pages/SingleProductPage/SingleProductPage'));
-const ContactsPage = lazy(() => import('./pages/ContactsPage/ContactsPage'));
-const Page404 = lazy(() => import('./pages/404/404'));
+import { LocationParams } from './App.type';
+
+const MainPage: React.FC = lazy(() => import('./pages/MainPage/MainPage'));
+const OurProductsPage: React.FC = lazy(() => import('./pages/OurProductsPage/OurProductsPage'));
+const SingleProductPage: React.FC = lazy(
+  () => import('./pages/SingleProductPage/SingleProductPage'),
+);
+const ContactsPage: React.FC = lazy(() => import('./pages/ContactsPage/ContactsPage'));
+const Page404: React.FC = lazy(() => import('./pages/404/404'));
 
 const App: React.FC = () => {
   return (
@@ -21,10 +25,12 @@ const App: React.FC = () => {
   );
 };
 
-const AnimatedSwitch = () => {
+const AnimatedSwitch: React.FC = () => {
   const location = useLocation();
-  const [displayLocation, setDisplayLocation] = useState(location);
-  const [transitionStage, setTransistionStage] = useState('fadeIn');
+  const [displayLocation, setDisplayLocation] = useState<LocationParams>(location);
+  const [transitionStage, setTransistionStage] = useState<string>('fadeIn');
+
+  console.log(location);
 
   useEffect(() => {
     if (location.pathname === '/notfound') {
@@ -32,7 +38,7 @@ const AnimatedSwitch = () => {
     } else if (location !== displayLocation) setTransistionStage('fadeOut');
   }, [location, displayLocation]);
 
-  const handleAnimationEnd = () => {
+  const handleAnimationEnd: () => void = () => {
     if (transitionStage === 'fadeOut') {
       setTransistionStage('fadeIn');
       setDisplayLocation(location);

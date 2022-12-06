@@ -5,10 +5,11 @@ import classes from './Navigation.module.scss';
 
 import { navigationList } from '../../data/data';
 
-import { NavigationPropsTypes, NavigationNavItems } from './Navigation.types';
+import { NavigationPropsTypes } from './Navigation.types';
+import { MappedArrayType } from '../../types/GlobalTypes';
 
 const Navigation: React.FC<NavigationPropsTypes> = ({ isActive }) => {
-  const navItems: NavigationNavItems = navigationList.map((item, i) => {
+  const navItems: MappedArrayType = navigationList.map((item, i) => {
     return <NavigationItem key={i} text={item.text} to={item.to} />;
   });
 

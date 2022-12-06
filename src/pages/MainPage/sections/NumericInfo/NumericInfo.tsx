@@ -1,13 +1,15 @@
 import Container from '../../../../components/UI/Container/Container';
-import NumericItem from './NumericItem/NumericItem';
+import NumericItem from '../../../../components/NumericItem/NumericItem';
 import Title from '../../../../components/UI/Title/Title';
 
 import classes from './NumericInfo.module.scss';
 
 import { numericInfoList } from '../../../../data/data';
 
+import { MappedArrayType } from '../../../../types/GlobalTypes';
+
 const NumericInfo: React.FC = () => {
-  const numItems = numericInfoList.map(({ id, img, title, amount }) => {
+  const numItems: MappedArrayType = numericInfoList.map(({ id, img, title, amount }) => {
     return <NumericItem key={id} img={img} title={title} amount={amount} />;
   });
 

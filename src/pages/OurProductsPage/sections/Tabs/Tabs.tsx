@@ -27,7 +27,6 @@ const Tabs: React.FC = () => {
             setActiveTab={setActiveTab}
           />
         </ul>
-
         <div className="tabs__outlet">
           <TabActivity id="tab1" activeTab={activeTab}>
             <TabContent contentList={firstTabList} />

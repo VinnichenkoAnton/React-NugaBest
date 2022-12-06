@@ -2,7 +2,9 @@ import { NavLink } from 'react-router-dom';
 
 import classes from '../Tabs.module.scss';
 
-const TabItem: React.FC<{ title: string; img: string; id: string }> = ({ title, img, id }) => {
+import { TabItemPropsTypes } from '../Tabs.types';
+
+const TabItem: React.FC<TabItemPropsTypes> = ({ title, img, id }) => {
   return (
     <NavLink to={`/products/${id}`} className={classes.tabs__wrapper}>
       <img className={classes.tabs__img} src={img} alt={title} />

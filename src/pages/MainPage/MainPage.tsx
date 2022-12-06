@@ -1,31 +1,27 @@
-// import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 import Header from '../../layouts/Header/Header';
 import MainScreen from './sections/MainScreen/MainScreen';
-// import Slider from '../../components/Slider/Slider';
 import NumericInfo from './sections/NumericInfo/NumericInfo';
 import VideoWithText from '../../components/VideoWithText/VideoWithText';
 import Health from './sections/Health/Health';
 import Ceramics from '../../components/Ceramics/Ceramics';
 import Videos from './sections/Videos/Videos';
 
-// import { sliderImagesList } from '../../data/data';
-
 const MainPage: React.FC = () => {
   return (
     <>
-      {/* <Helmet>
+      <Helmet>
         <meta
           name="description"
-          content="Головна сторінка сайту Оберіг. Оберіг - охоронная компанія для фізичних осіб та організацій в с.Гатне"
+          content="Glavna stranica web stranice Nuga Best Croatia. Nuga Best Croatia je ovlašteni distributer ekskluzivnih medicinskih proizvoda Nuga Best"
         />
-        <title>Оберіг</title>
-      </Helmet> */}
+        <title>Nuga Best Croatia</title>
+      </Helmet>
 
       <Header />
       <MainScreen />
 
-      {/* <Slider autoPlay={false} controls={true} sliderContent={sliderImagesList} /> */}
       <NumericInfo />
       <VideoWithText
         video="https://www.youtube.com/embed/Z_41lwfaNmk"

@@ -1,8 +1,6 @@
-const TabActivity: React.FC<{ id: string; activeTab: string; children: React.ReactNode }> = ({
-  id,
-  activeTab,
-  children,
-}) => {
+import { TabActivityPropsTypes } from '../Tabs.types';
+
+const TabActivity: React.FC<TabActivityPropsTypes> = ({ id, activeTab, children }) => {
   return activeTab === id ? <>{children}</> : null;
 };
 

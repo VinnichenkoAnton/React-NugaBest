@@ -1,4 +1,4 @@
-// import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 import Header from '../../layouts/Header/Header';
 import Ceramics from '../../components/Ceramics/Ceramics';
@@ -7,13 +7,13 @@ import Tabs from './sections/Tabs/Tabs';
 const AboutCompanyPage: React.FC = () => {
   return (
     <>
-      {/* <Helmet>
+      <Helmet>
         <meta
           name="description"
-          content="Cторінка Наші Послуги сайту Оберіг. Оберіг - охоронная компанія для фізичних осіб та організацій в с.Гатне"
+          content="Stranica naših proizvoda na web stranici Nuga Best Croatia. Nuga Best Croatia je ovlašteni distributer ekskluzivnih medicinskih proizvoda Nuga Best"
         />
-        <title>Оберіг</title>
-      </Helmet> */}
+        <title>Nuga Best Croatia</title>
+      </Helmet>
       <Header />
       <Tabs />
       <Ceramics />
