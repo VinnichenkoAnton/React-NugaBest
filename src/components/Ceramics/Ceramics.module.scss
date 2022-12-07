@@ -1,6 +1,7 @@
 .ceramics {
     padding: 70px 0;
     &__list {
+        animation: 3s appear forwards;
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
@@ -15,6 +16,17 @@
         &__list {
             justify-content: space-around;
         }
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translate(-20px, 0);
+    }
+    to {
+    opacity: 1;
+    transform: translate(0px, 0px);
     }
 }
 

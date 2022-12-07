@@ -30,8 +30,6 @@ const AnimatedSwitch: React.FC = () => {
   const [displayLocation, setDisplayLocation] = useState<LocationParams>(location);
   const [transitionStage, setTransistionStage] = useState<string>('fadeIn');
 
-  console.log(location);
-
   useEffect(() => {
     if (location.pathname === '/notfound') {
       setDisplayLocation(location);
