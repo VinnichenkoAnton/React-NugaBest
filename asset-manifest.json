@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-NugaBest/static/css/main.1f17e1b6.css",
-    "main.js": "/React-NugaBest/static/js/main.eb85fbc1.js",
+    "main.js": "/React-NugaBest/static/js/main.0d1b8c56.js",
     "static/css/800.32219893.chunk.css": "/React-NugaBest/static/css/800.32219893.chunk.css",
     "static/js/800.9519bbf8.chunk.js": "/React-NugaBest/static/js/800.9519bbf8.chunk.js",
     "static/css/514.03b3d871.chunk.css": "/React-NugaBest/static/css/514.03b3d871.chunk.css",
@@ -88,7 +88,7 @@
     "static/media/emailicn.svg": "/React-NugaBest/static/media/emailicn.c99a7f050fc48e72a34c9b11ef31f3d4.svg",
     "static/media/phoneicn.svg": "/React-NugaBest/static/media/phoneicn.29ec2df9b5ea9c51135e7580ad741601.svg",
     "main.1f17e1b6.css.map": "/React-NugaBest/static/css/main.1f17e1b6.css.map",
-    "main.eb85fbc1.js.map": "/React-NugaBest/static/js/main.eb85fbc1.js.map",
+    "main.0d1b8c56.js.map": "/React-NugaBest/static/js/main.0d1b8c56.js.map",
     "800.32219893.chunk.css.map": "/React-NugaBest/static/css/800.32219893.chunk.css.map",
     "800.9519bbf8.chunk.js.map": "/React-NugaBest/static/js/800.9519bbf8.chunk.js.map",
     "514.03b3d871.chunk.css.map": "/React-NugaBest/static/css/514.03b3d871.chunk.css.map",
@@ -107,6 +107,6 @@
   },
   "entrypoints": [
     "static/css/main.1f17e1b6.css",
-    "static/js/main.eb85fbc1.js"
+    "static/js/main.0d1b8c56.js"
   ]
 }
